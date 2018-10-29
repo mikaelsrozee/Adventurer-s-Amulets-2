@@ -1,6 +1,7 @@
 package com.eagle.adventurersamulets.jei.pestle;
 
 import com.eagle.adventurersamulets.Dictionary.Core;
+import com.eagle.adventurersamulets.Dictionary.Item;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nonnull;
@@ -10,6 +11,7 @@ import mezz.jei.api.gui.IDrawable;
 import mezz.jei.api.gui.IGuiItemStackGroup;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
+import mezz.jei.api.ingredients.VanillaTypes;
 import mezz.jei.api.recipe.IRecipeCategory;
 import mezz.jei.api.recipe.IRecipeWrapper;
 import net.minecraft.client.Minecraft;
@@ -20,56 +22,49 @@ import net.minecraft.util.ResourceLocation;
 
 public class PestleRecipeCategory implements IRecipeCategory {
 
-  public static final String UID = "adventurersamulets.pestle";
+  public static final String UID = Core.MOD_ID + "." + Item.PESTLE;
   private final IDrawable background;
   private final String localizedName;
   private final IDrawable overlay;
 
-  public PestleRecipeCategory(IGuiHelper guiHelper)
-  {
+  public PestleRecipeCategory(IGuiHelper guiHelper) {
     background = guiHelper.createBlankDrawable(96, 28);
-    localizedName = I18n.format("adventurersamulets.jei.pestle");
-    overlay = guiHelper.createDrawable(new ResourceLocation("adventurersamulets", "textures/gui/jei/pestle.png"), 0, 0, 96, 28);
+    localizedName = I18n.format(Core.MOD_ID + ".jei." + Item.PESTLE);
+    overlay = guiHelper.createDrawable(new ResourceLocation(Core.MOD_ID, "textures/gui/jei/" + Item.PESTLE + ".png"), 0, 0, 96, 28);
   }
 
   @Nonnull
   @Override
-  public String getUid()
-  {
+  public String getUid() {
     return UID;
   }
 
   @Nonnull
   @Override
-  public String getTitle()
-  {
+  public String getTitle() {
     return localizedName;
   }
 
   @Nonnull
   @Override
-  public String getModName()
-  {
+  public String getModName() {
     return Core.MOD_NAME;
   }
 
   @Nonnull
   @Override
-  public IDrawable getBackground()
-  {
+  public IDrawable getBackground() {
     return background;
   }
 
   @Nullable
   @Override
-  public IDrawable getIcon()
-  {
+  public IDrawable getIcon() {
     return null;
   }
 
   @Override
-  public void drawExtras(@Nonnull Minecraft minecraft)
-  {
+  public void drawExtras(@Nonnull Minecraft minecraft) {
     GlStateManager.enableAlpha();
     GlStateManager.enableBlend();
     overlay.draw(minecraft, 0, 0);
@@ -78,8 +73,7 @@ public class PestleRecipeCategory implements IRecipeCategory {
   }
 
   @Override
-  public void setRecipe(@Nonnull IRecipeLayout recipeLayout, @Nonnull IRecipeWrapper recipeWrapper, @Nonnull IIngredients ingredients)
-  {
+  public void setRecipe(@Nonnull IRecipeLayout recipeLayout, @Nonnull IRecipeWrapper recipeWrapper, @Nonnull IIngredients ingredients) {
     if (!(recipeWrapper instanceof PestleRecipeWrapper))
       return;
 
@@ -88,8 +82,9 @@ public class PestleRecipeCategory implements IRecipeCategory {
     guiItemStacks.init(0, true, 0, 5);
     guiItemStacks.init(1, false, 73, 5);
 
-    List<ItemStack> input = ingredients.getInputs(ItemStack.class).get(0);
-    List<ItemStack> output = ingredients.getOutputs(ItemStack.class).get(0);
+    List<ItemStack> input = ingredients.getInputs(VanillaTypes.ITEM).get(0);
+    List<ItemStack> output = ingredients.getOutputs(VanillaTypes.ITEM).get(0);
+
 
     guiItemStacks.set(0, input);
     guiItemStacks.set(1, output);
@@ -97,8 +92,7 @@ public class PestleRecipeCategory implements IRecipeCategory {
 
   @Nonnull
   @Override
-  public List<String> getTooltipStrings(int mouseX, int mouseY)
-  {
+  public List<String> getTooltipStrings(int mouseX, int mouseY) {
     return new ArrayList();
   }
 

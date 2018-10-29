@@ -5,6 +5,7 @@ import com.google.common.collect.ImmutableList;
 import java.util.List;
 import javax.annotation.Nonnull;
 import mezz.jei.api.ingredients.IIngredients;
+import mezz.jei.api.ingredients.VanillaTypes;
 import mezz.jei.api.recipe.IRecipeWrapper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
@@ -15,8 +16,7 @@ public class PestleRecipeWrapper implements IRecipeWrapper {
   private final List<List<ItemStack>> input;
   private final ItemStack output;
 
-  public PestleRecipeWrapper(RecipePestle recipePestle)
-  {
+  public PestleRecipeWrapper(RecipePestle recipePestle) {
     ImmutableList.Builder<List<ItemStack>> builder = ImmutableList.builder();
 
     if (recipePestle.getInput() instanceof ItemStack)
@@ -29,28 +29,24 @@ public class PestleRecipeWrapper implements IRecipeWrapper {
   }
 
   @Override
-  public void getIngredients(@Nonnull IIngredients ingredients)
-  {
-    ingredients.setInputLists(ItemStack.class, input);
-    ingredients.setOutput(ItemStack.class, output);
+  public void getIngredients(@Nonnull IIngredients ingredients) {
+    ingredients.setInputLists(VanillaTypes.ITEM, input);
+    ingredients.setOutput(VanillaTypes.ITEM, output);
   }
 
   @Override
-  public void drawInfo(@Nonnull Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY)
-  {
+  public void drawInfo(@Nonnull Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY) {
 
   }
 
   @Nonnull
   @Override
-  public List<String> getTooltipStrings(int mouseX, int mouseY)
-  {
+  public List<String> getTooltipStrings(int mouseX, int mouseY) {
     return ImmutableList.of();
   }
 
   @Override
-  public boolean handleClick(@Nonnull Minecraft minecraft, int mouseX, int mouseY, int mouseButton)
-  {
+  public boolean handleClick(@Nonnull Minecraft minecraft, int mouseX, int mouseY, int mouseButton) {
     return false;
   }
 
