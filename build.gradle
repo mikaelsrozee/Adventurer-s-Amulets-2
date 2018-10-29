@@ -9,7 +9,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "1.12.2-0.0.0"
+version = "1.12.2-2.0.0-ALPHA1"
 group = "com.eagle.adventurersamulets2"
 archivesBaseName = "AdventurersAmulets2"
 
@@ -27,11 +27,15 @@ minecraft {
 
 repositories {
 	maven { url "http://dvs1.progwml6.com/files/maven" }
-	
+    maven {
+        name = "thiakil"
+        url = "http://maven.thiakil.com"
+    }
 }
 
 dependencies {
 	deobfCompile "mezz.jei:jei_1.12.2:4.12.1.217"
+    deobfCompile "com.azanor.baubles:Baubles:1.12-1.5.2"
 }
 
 processResources {
