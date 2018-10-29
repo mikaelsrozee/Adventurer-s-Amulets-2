@@ -1,17 +1,23 @@
 package com.eagle.adventurersamulets;
 
+import com.eagle.adventurersamulets.Dictionary.Core;
+import com.eagle.adventurersamulets.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Dictionary.Core.MOD_ID, name = Dictionary.Core.MOD_NAME, version = Dictionary.Core.VERSION, dependencies = Dictionary.Core.DEPENDENCIES)
+@Mod(modid = Core.MOD_ID, name = Core.MOD_NAME, version = Core.VERSION, dependencies = Core.DEPENDENCIES)
 public class AdventurersAmulets {
+
+  @SidedProxy(clientSide = Core.CLIENT_PROXY_CLASS, serverSide = Core.COMMON_PROXY_CLASS)
+  public static CommonProxy proxy;
 
   @EventHandler
   public static void preInit(FMLPreInitializationEvent event) {
-
+    proxy.initModels();
   }
 
   @EventHandler
