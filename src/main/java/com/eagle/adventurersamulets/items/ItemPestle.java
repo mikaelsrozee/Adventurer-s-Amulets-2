@@ -1,6 +1,7 @@
 package com.eagle.adventurersamulets.items;
 
 import com.eagle.adventurersamulets.Dictionary.Item;
+import com.eagle.adventurersamulets.init.ModConfig;
 import java.util.List;
 import javax.annotation.Nonnull;
 import net.minecraft.entity.item.EntityItem;
@@ -18,7 +19,7 @@ public class ItemPestle extends ItemMod {
   public ItemPestle() {
     super(Item.PESTLE);
     setMaxStackSize(1);
-    setMaxDamage(32); // TODO: Implement config
+    setMaxDamage(ModConfig.pestleDurability);
     setNoRepair();
     setFull3D();
   }

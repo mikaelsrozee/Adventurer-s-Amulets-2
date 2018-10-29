@@ -1,6 +1,7 @@
 package com.eagle.adventurersamulets;
 
 import com.eagle.adventurersamulets.Dictionary.Core;
+import com.eagle.adventurersamulets.init.ModConfig;
 import com.eagle.adventurersamulets.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -17,6 +18,7 @@ public class AdventurersAmulets {
 
   @EventHandler
   public static void preInit(FMLPreInitializationEvent event) {
+    ModConfig.loadConfig(event.getSuggestedConfigurationFile());
     proxy.initModels();
   }
 
