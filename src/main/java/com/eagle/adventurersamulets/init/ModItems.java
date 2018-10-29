@@ -2,6 +2,7 @@ package com.eagle.adventurersamulets.init;
 
 import com.eagle.adventurersamulets.Dictionary.Core;
 import com.eagle.adventurersamulets.items.ItemMod;
+import com.eagle.adventurersamulets.items.ItemPestle;
 import java.util.LinkedList;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -13,6 +14,8 @@ import net.minecraftforge.registries.IForgeRegistry;
 public final class ModItems {
 
   public static LinkedList<ItemMod> modItems = new LinkedList<>();
+
+  public static final Item pestle = new ItemPestle();
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {

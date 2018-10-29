@@ -11,4 +11,8 @@ public class Dictionary {
     public static final String CLIENT_PROXY_CLASS = "com.eagle.adventurersamulets.proxy.ClientProxy";
   }
 
+  public static class Item {
+    public static final String PESTLE = "pestle";
+  }
+
 }
