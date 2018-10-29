@@ -1,6 +1,7 @@
 package com.eagle.adventurersamulets.init;
 
 import com.eagle.adventurersamulets.Dictionary.Core;
+import com.eagle.adventurersamulets.items.ItemBlockMod;
 import com.eagle.adventurersamulets.items.ItemMod;
 import com.eagle.adventurersamulets.items.ItemPestle;
 import java.util.LinkedList;
@@ -14,6 +15,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public final class ModItems {
 
   public static LinkedList<ItemMod> modItems = new LinkedList<>();
+  public static LinkedList<ItemBlockMod> modItemBlocks = new LinkedList<>();
 
   public static final Item pestle = new ItemPestle();
 
@@ -21,6 +23,7 @@ public final class ModItems {
   public static void registerItems(RegistryEvent.Register<Item> event) {
     IForgeRegistry<Item> registry = event.getRegistry();
     modItems.forEach(registry::register);
+    modItemBlocks.forEach(registry::register);
   }
 
 }

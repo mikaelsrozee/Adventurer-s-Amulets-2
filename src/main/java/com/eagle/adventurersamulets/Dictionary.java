@@ -15,4 +15,8 @@ public class Dictionary {
     public static final String PESTLE = "pestle";
   }
 
+  public static class Block {
+    public static final String SLATE = "slate";
+  }
+
 }
