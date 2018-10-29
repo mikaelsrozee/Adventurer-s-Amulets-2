@@ -1,7 +1,7 @@
 package com.eagle.adventurersamulets.items;
 
 import com.eagle.adventurersamulets.Dictionary.Item;
-import com.eagle.adventurersamulets.api.AdventurersAmuletsAPI;
+import com.eagle.adventurersamulets.api.AdvAmAPI;
 import com.eagle.adventurersamulets.api.recipe.RecipePestle;
 import com.eagle.adventurersamulets.init.ModConfig;
 import java.util.List;
@@ -35,7 +35,7 @@ public class ItemPestle extends ItemMod {
       for (Object obj : entityItems) {
         if (obj instanceof EntityItem) {
           EntityItem entityItem = (EntityItem) obj;
-          for (RecipePestle recipe : AdventurersAmuletsAPI.pestleRecipes) {
+          for (RecipePestle recipe : AdvAmAPI.pestleRecipes) {
             if (recipe.matches(entityItem.getItem(), recipe) && entityItem.getItem().getCount() == 1) {
               world.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, entityItem.posX, entityItem.posY, entityItem.posZ, 0.0D, 0.0D, 0.0D);
               if (!world.isRemote) {

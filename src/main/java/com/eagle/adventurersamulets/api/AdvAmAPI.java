@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.item.ItemStack;
 
-public final class AdventurersAmuletsAPI {
+public final class AdvAmAPI {
 
   public static final List<RecipePestle> pestleRecipes = new ArrayList<>();
 
