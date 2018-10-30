@@ -16,8 +16,7 @@ public final class AdvAmAPI {
    * @param input  An oredict key, ItemStack, Item or Block instance used in the creation of the recipe
    * @return The recipe created
    */
-  public static RecipePestle registerPestleRecipe(ItemStack output, Object input)
-  {
+  public static RecipePestle registerPestleRecipe(ItemStack output, Object input) {
     RecipePestle recipe = new RecipePestle(output, input);
     pestleRecipes.add(recipe);
     return recipe;
