@@ -19,4 +19,15 @@ public class Dictionary {
     public static final String SLATE = "slate";
   }
 
+  public static class AMP {
+    public static final String AQUATIC_ID = "aquatic";
+    public static final String EARTHBOUND_ID = "earthbound";
+    public static final String FAIRY_ID = "fairy";
+    public static final String FLORAL_ID = "floral";
+    public static final String FROSTBITTEN_ID = "frostbitten";
+    public static final String INFERNAL_ID = "infernal";
+    public static final String TRANSPOSING_ID = "transposing";
+    public static final String WINDMAKERS_ID = "windmakers";
+  }
+
 }
