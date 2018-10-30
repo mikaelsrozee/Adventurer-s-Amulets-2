@@ -28,6 +28,15 @@ public class Dictionary {
     public static final String INFERNAL_ID = "infernal";
     public static final String TRANSPOSING_ID = "transposing";
     public static final String WINDMAKERS_ID = "windmakers";
+
+    public static final String AQUATIC_KEY = "amptype.aquatic.name";
+    public static final String EARTHBOUND_KEY = "amptype.earthbound.name";
+    public static final String FAIRY_KEY = "amptype.fairy.name";
+    public static final String FLORAL_KEY = "amptype.floral.name";
+    public static final String FROSTBITTEN_KEY = "amptype.frostbitten.name";
+    public static final String INFERNAL_KEY = "amptype.infernal.name";
+    public static final String TRANSPOSING_KEY = "amptype.transposing.name";
+    public static final String WINDMAKERS_KEY = "amptype.windmakers.name";
   }
 
 }

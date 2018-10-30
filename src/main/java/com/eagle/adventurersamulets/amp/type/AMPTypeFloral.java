@@ -1,6 +1,7 @@
 package com.eagle.adventurersamulets.amp.type;
 
 import com.eagle.adventurersamulets.Dictionary;
+import com.eagle.adventurersamulets.Dictionary.AMP;
 import com.eagle.adventurersamulets.api.amp.IAMPType;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
@@ -14,7 +15,7 @@ public class AMPTypeFloral implements IAMPType {
 
   @Override
   public String getLocalizedName() {
-    return I18n.format("amptype.floral.name");
+    return I18n.format(AMP.FLORAL_KEY);
   }
 
   @Override

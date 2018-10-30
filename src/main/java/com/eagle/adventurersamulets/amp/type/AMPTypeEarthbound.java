@@ -1,6 +1,7 @@
 package com.eagle.adventurersamulets.amp.type;
 
 import com.eagle.adventurersamulets.Dictionary;
+import com.eagle.adventurersamulets.Dictionary.AMP;
 import com.eagle.adventurersamulets.api.amp.IAMPType;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.resources.I18n;
@@ -15,7 +16,7 @@ public class AMPTypeEarthbound implements IAMPType {
 
   @Override
   public String getLocalizedName() {
-    return I18n.format("amptype.earthbound.name");
+    return I18n.format(AMP.EARTHBOUND_KEY);
   }
 
   @Override
