@@ -5,3 +5,12 @@ tile.slate.name=Slate
 adventurersamulets.jei.pestle=Pestle Recipes
 
 itemGroup.adventurersamulets=Adventurer's Amulets
+
+amptype.windmakers.name=Windmaker's
+amptype.infernal.name=Infernal
+amptype.aquatic.name=Aquatic
+amptype.floral.name=Floral
+amptype.earthbound.name=Earthbound
+amptype.transposing.name=Transposing
+amptype.frostbitten.name=Frostbitten
+amptype.fairy.name=Fairy

@@ -1,6 +1,7 @@
 package com.eagle.adventurersamulets;
 
 import com.eagle.adventurersamulets.Dictionary.Core;
+import com.eagle.adventurersamulets.init.ModAMP;
 import com.eagle.adventurersamulets.init.ModConfig;
 import com.eagle.adventurersamulets.init.ModCreativeTab;
 import com.eagle.adventurersamulets.init.ModRecipes;
@@ -29,6 +30,7 @@ public class AdventurersAmulets {
   @EventHandler
   public static void init(FMLInitializationEvent event) {
     ModRecipes.init();
+    ModAMP.registerAMPTypes();
   }
 
   @EventHandler
