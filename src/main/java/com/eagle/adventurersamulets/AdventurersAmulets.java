@@ -2,6 +2,7 @@ package com.eagle.adventurersamulets;
 
 import com.eagle.adventurersamulets.Dictionary.Core;
 import com.eagle.adventurersamulets.init.ModConfig;
+import com.eagle.adventurersamulets.init.ModCreativeTab;
 import com.eagle.adventurersamulets.init.ModRecipes;
 import com.eagle.adventurersamulets.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
@@ -16,6 +17,8 @@ public class AdventurersAmulets {
 
   @SidedProxy(clientSide = Core.CLIENT_PROXY_CLASS, serverSide = Core.COMMON_PROXY_CLASS)
   public static CommonProxy proxy;
+
+  public static final ModCreativeTab creativeTab = new ModCreativeTab();
 
   @EventHandler
   public static void preInit(FMLPreInitializationEvent event) {
