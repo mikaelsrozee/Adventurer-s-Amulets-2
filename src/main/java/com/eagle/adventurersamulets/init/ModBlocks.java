@@ -2,6 +2,7 @@ package com.eagle.adventurersamulets.init;
 
 import com.eagle.adventurersamulets.Dictionary;
 import com.eagle.adventurersamulets.Dictionary.Core;
+import com.eagle.adventurersamulets.blocks.BlockCraftingRune;
 import com.eagle.adventurersamulets.blocks.BlockMod;
 import java.util.LinkedList;
 import net.minecraft.block.Block;
@@ -15,7 +16,8 @@ public class ModBlocks {
 
   public static LinkedList<BlockMod> modBlocks = new LinkedList<>();
 
-  public static final Block slate = new BlockMod(Dictionary.Block.SLATE);
+  public static Block slate = new BlockMod(Dictionary.Block.SLATE);
+  public static BlockCraftingRune craftingRune = new BlockCraftingRune();
 
   @SubscribeEvent
   public static void registerBlocks(RegistryEvent.Register<Block> event) {

@@ -18,6 +18,7 @@ public class Dictionary {
 
   public static class Block {
     public static final String SLATE = "slate";
+    public static final String CRAFTING_RUNE = "craftingRune";
   }
 
   public static class AMP {

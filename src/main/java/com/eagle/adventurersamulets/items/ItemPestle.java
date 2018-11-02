@@ -30,10 +30,6 @@ public class ItemPestle extends ItemMod {
   @Nonnull
   @Override
   public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-
-    System.out.println(this.getRegistryName());
-    System.out.println(this.getUnlocalizedName());
-
     if (world.getBlockState(pos) == Blocks.STONE.getDefaultState() && hitY == 1.0) {
       List entityItems = world.getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(pos, pos.add(1, 2, 1)));
       for (Object obj : entityItems) {
