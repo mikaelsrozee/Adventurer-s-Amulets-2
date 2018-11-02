@@ -1,0 +1,24 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "IGI",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "adventurersamulets:slaterod"
+    },
+    "I": {
+      "item": "adventurersamulets:searingiron",
+      "data": 3
+    },
+    "G": {
+      "item": "adventurersamulets:searinggemstone",
+      "data": 3
+    }
+  },
+  "result": {
+    "item": "adventurersamulets:pickaxeofthescorchingcore"
+  }
+}

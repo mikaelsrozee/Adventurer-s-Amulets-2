@@ -17,6 +17,7 @@ public class Dictionary {
     public static final String SEARINGIRON = "searingiron";
     public static final String SEARINGGEMSTONE = "searinggemstone";
     public static final String SLATEROD = "slaterod";
+    public static final String SMELTINGPICKAXE = "pickaxeofthescorchingcore";
   }
 
   public static class Block {

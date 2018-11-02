@@ -5,6 +5,7 @@ import com.eagle.adventurersamulets.init.ModAMP;
 import com.eagle.adventurersamulets.init.ModConfig;
 import com.eagle.adventurersamulets.init.ModCreativeTab;
 import com.eagle.adventurersamulets.init.ModInteractHandler;
+import com.eagle.adventurersamulets.init.ModItems;
 import com.eagle.adventurersamulets.init.ModRecipes;
 import com.eagle.adventurersamulets.proxy.CommonProxy;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,6 +34,7 @@ public class AdventurersAmulets {
     ModRecipes.init();
     ModAMP.registerAMPTypes();
     MinecraftForge.EVENT_BUS.register(new ModInteractHandler());
+    MinecraftForge.EVENT_BUS.register(ModItems.SMELTINGPICKAXE);
   }
 
   @EventHandler
