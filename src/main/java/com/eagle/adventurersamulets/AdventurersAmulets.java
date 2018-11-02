@@ -4,8 +4,10 @@ import com.eagle.adventurersamulets.Dictionary.Core;
 import com.eagle.adventurersamulets.init.ModAMP;
 import com.eagle.adventurersamulets.init.ModConfig;
 import com.eagle.adventurersamulets.init.ModCreativeTab;
+import com.eagle.adventurersamulets.init.ModInteractHandler;
 import com.eagle.adventurersamulets.init.ModRecipes;
 import com.eagle.adventurersamulets.proxy.CommonProxy;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -30,6 +32,7 @@ public class AdventurersAmulets {
   public static void init(FMLInitializationEvent event) {
     ModRecipes.init();
     ModAMP.registerAMPTypes();
+    MinecraftForge.EVENT_BUS.register(new ModInteractHandler());
   }
 
   @EventHandler

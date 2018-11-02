@@ -24,4 +24,5 @@ public class ModBlocks {
     IForgeRegistry<Block> registry = event.getRegistry();
     modBlocks.forEach(registry::register);
   }
+
 }

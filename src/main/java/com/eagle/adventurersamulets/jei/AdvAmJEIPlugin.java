@@ -14,6 +14,7 @@ import mezz.jei.api.IModPlugin;
 import mezz.jei.api.IModRegistry;
 import mezz.jei.api.JEIPlugin;
 import mezz.jei.api.gui.IDrawable;
+import mezz.jei.api.ingredients.VanillaTypes;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
@@ -38,6 +39,8 @@ public class AdvAmJEIPlugin implements IModPlugin {
 
     registry.addRecipeCatalyst(new ItemStack(ModItems.PESTLE), PestleRecipeCategory.UID);
     registry.addRecipeCatalyst(new ItemStack(ModBlocks.CRAFTINGRUNE), CraftingRuneRecipeCategory.UID);
+
+    registry.addIngredientInfo(new ItemStack(ModBlocks.CRAFTINGRUNE), VanillaTypes.ITEM, "jei.gui.craftingrune.desc");
   }
 
   public static void drawOverlay(IDrawable overlay, Minecraft minecraft) {
