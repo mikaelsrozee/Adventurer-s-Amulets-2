@@ -24,7 +24,6 @@ public class AdventurersAmulets {
   @EventHandler
   public static void preInit(FMLPreInitializationEvent event) {
     ModConfig.loadConfig(event.getSuggestedConfigurationFile());
-    proxy.initModels();
   }
 
   @EventHandler

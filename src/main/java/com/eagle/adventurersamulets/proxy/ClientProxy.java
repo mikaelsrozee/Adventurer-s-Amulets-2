@@ -1,9 +1,9 @@
 package com.eagle.adventurersamulets.proxy;
 
-import com.eagle.adventurersamulets.blocks.BlockMod;
-import com.eagle.adventurersamulets.init.ModBlocks;
-import com.eagle.adventurersamulets.init.ModItems;
-import com.eagle.adventurersamulets.items.ItemMod;
+import com.eagle.adventurersamulets.Dictionary.Core;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 
 public class ClientProxy extends CommonProxy {
 
@@ -13,9 +13,8 @@ public class ClientProxy extends CommonProxy {
   }
 
   @Override
-  public void initModels() {
-    ModItems.modItems.forEach(ItemMod::initModel);
-    ModBlocks.modBlocks.forEach(BlockMod::initModel);
+  public void initModel(Item item, int meta, String id) {
+    ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Core.MOD_ID + ":" + id, "inventory"));
   }
 
 }

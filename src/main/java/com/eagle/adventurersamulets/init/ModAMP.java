@@ -1,6 +1,13 @@
 package com.eagle.adventurersamulets.init;
 
-import com.eagle.adventurersamulets.amp.type.*;
+import com.eagle.adventurersamulets.amp.type.AMPTypeAquatic;
+import com.eagle.adventurersamulets.amp.type.AMPTypeEarthbound;
+import com.eagle.adventurersamulets.amp.type.AMPTypeFairy;
+import com.eagle.adventurersamulets.amp.type.AMPTypeFloral;
+import com.eagle.adventurersamulets.amp.type.AMPTypeFrostbitten;
+import com.eagle.adventurersamulets.amp.type.AMPTypeInfernal;
+import com.eagle.adventurersamulets.amp.type.AMPTypeTransposing;
+import com.eagle.adventurersamulets.amp.type.AMPTypeWindmakers;
 import com.eagle.adventurersamulets.api.AdvAmAPI;
 
 public class ModAMP {

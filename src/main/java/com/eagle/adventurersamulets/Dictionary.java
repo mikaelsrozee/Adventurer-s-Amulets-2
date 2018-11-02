@@ -13,6 +13,7 @@ public class Dictionary {
 
   public static class Item {
     public static final String PESTLE = "pestle";
+    public static final String ASH = "ash";
   }
 
   public static class Block {

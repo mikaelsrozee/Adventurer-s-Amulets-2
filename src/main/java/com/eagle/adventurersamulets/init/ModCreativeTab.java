@@ -12,7 +12,7 @@ public class ModCreativeTab extends CreativeTabs {
 
   @Override
   public ItemStack getTabIconItem() {
-    return new ItemStack(ModItems.pestle);
+    return new ItemStack(ModItems.PESTLE);
   }
 
 }

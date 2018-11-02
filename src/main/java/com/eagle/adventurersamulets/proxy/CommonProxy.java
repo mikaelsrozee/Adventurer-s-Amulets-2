@@ -1,5 +1,7 @@
 package com.eagle.adventurersamulets.proxy;
 
+import net.minecraft.item.Item;
+
 public class CommonProxy implements IProxy {
 
   @Override
@@ -8,7 +10,7 @@ public class CommonProxy implements IProxy {
   }
 
   @Override
-  public void initModels() {
+  public void initModel(Item item, int meta, String id) {
 
   }
 

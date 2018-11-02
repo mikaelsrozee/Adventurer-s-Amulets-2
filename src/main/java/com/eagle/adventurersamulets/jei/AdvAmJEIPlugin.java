@@ -26,7 +26,7 @@ public class AdvAmJEIPlugin implements IModPlugin {
 
     registry.addRecipes(AdvAmAPI.pestleRecipes, PestleRecipeCategory.UID);
 
-    registry.addRecipeCatalyst(new ItemStack(ModItems.pestle), PestleRecipeCategory.UID);
+    registry.addRecipeCatalyst(new ItemStack(ModItems.PESTLE), PestleRecipeCategory.UID);
   }
 
 }
