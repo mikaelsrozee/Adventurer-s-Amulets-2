@@ -19,6 +19,9 @@ public final class ModConfig {
   public static int searingMaxAMP = 1000;
   public static boolean fortuneSmelting = true;
   public static int scorchingCoreMaxAMP = 1000;
+  public static int windmakersBladeMaxAMP = 1000;
+  public static int windmakersBladeDashCost = 5;
+  public static int windmakersBladeDashCooldown = 25;
 
   public static boolean runicTransformation = true;
 
@@ -45,6 +48,9 @@ public final class ModConfig {
     searingMaxAMP = config.getInt("searingMaxAMP", category, searingMaxAMP, 0, Integer.MAX_VALUE, "The maximum AMP that the Searing Iron/Gemstone can store.");
     fortuneSmelting = config.getBoolean("fortuneSmelting", category, fortuneSmelting, "Set to false to disable the fortune multiplier on the Pickaxe of the Scorching Core when it is enchanted with fortune.");
     scorchingCoreMaxAMP = config.getInt("scorchingCoreMaxAMP", category, scorchingCoreMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Pickaxe of the Scorching Core can store.");
+    windmakersBladeMaxAMP = config.getInt("windmakersBladeMaxAMP", category, windmakersBladeMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Windmaker's Blade can store.");
+    windmakersBladeDashCost = config.getInt("windmakersBladeDashCost", category, windmakersBladeDashCost, 0, windmakersBladeMaxAMP, "The AMP cost per dash.");
+    windmakersBladeDashCooldown = config.getInt("windmakersBladeDashCooldown", category, windmakersBladeDashCooldown, 0, Integer.MAX_VALUE, "The time, in ticks, for the cooldown of the Blade's dash ability.");
 
     category = "Blocks";
     config.addCustomCategoryComment(category, "Allows for the tweaking of non-AMP-related blocks.");

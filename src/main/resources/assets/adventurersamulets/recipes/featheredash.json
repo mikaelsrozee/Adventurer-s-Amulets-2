@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "adventurersamulets:ash"
+    },
+    {
+      "item": "adventurersamulets:emeraldstring"
+    },
+    {
+      "item": "adventurersamulets:emeraldstring"
+    },
+    {
+      "item": "adventurersamulets:featherdust"
+    }
+  ],
+  "result": {
+    "item": "adventurersamulets:featheredash"
+  }
+}

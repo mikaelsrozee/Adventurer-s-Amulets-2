@@ -8,6 +8,7 @@ import com.eagle.adventurersamulets.items.ItemMod;
 import com.eagle.adventurersamulets.items.ItemPestle;
 import com.eagle.adventurersamulets.items.ItemSearing;
 import com.eagle.adventurersamulets.items.ItemSmeltingPickaxe;
+import com.eagle.adventurersamulets.items.ItemWindmakersBlade;
 import java.util.LinkedList;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -31,6 +32,10 @@ public class ModItems {
   public static ItemSearing IRON = new ItemSearing(Dictionary.Item.SEARINGIRON);
   public static ItemMod SLATEROD = new ItemMod(Dictionary.Item.SLATEROD);
   public static ItemSmeltingPickaxe SMELTINGPICKAXE = new ItemSmeltingPickaxe();
+  public static ItemMod FEATHERDUST = new ItemMod(Dictionary.Item.FEATHERDUST);
+  public static ItemMod EMERALDSTRING = new ItemMod(Dictionary.Item.EMERALDSTRING);
+  public static ItemMod FEATHEREDASH = new ItemMod(Dictionary.Item.FEATHEREDASH);
+  public static ItemWindmakersBlade WINDMAKERSBLADE = new ItemWindmakersBlade();
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {
@@ -39,7 +44,7 @@ public class ModItems {
     modItems.forEach(registry::register);
     modItemBlocks.forEach(registry::register);
 
-    registry.register(SMELTINGPICKAXE);
+    registry.registerAll(SMELTINGPICKAXE, WINDMAKERSBLADE);
   }
 
   @SubscribeEvent
@@ -51,6 +56,7 @@ public class ModItems {
       block.initModel();
 
     SMELTINGPICKAXE.initModel();
+    WINDMAKERSBLADE.initModel();
   }
 
 

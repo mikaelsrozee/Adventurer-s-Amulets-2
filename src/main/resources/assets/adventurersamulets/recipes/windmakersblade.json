@@ -1,0 +1,23 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " AD",
+    "ADA",
+    "SA "
+  ],
+  "key": {
+    "A": {
+      "item": "adventurersamulets:featheredash"
+    },
+    "D": {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    "S": {
+      "item": "adventurersamulets:slaterod"
+    }
+  },
+  "result": {
+    "item": "adventurersamulets:windmakersblade"
+  }
+}

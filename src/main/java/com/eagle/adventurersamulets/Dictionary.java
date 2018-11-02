@@ -18,11 +18,16 @@ public class Dictionary {
     public static final String SEARINGGEMSTONE = "searinggemstone";
     public static final String SLATEROD = "slaterod";
     public static final String SMELTINGPICKAXE = "pickaxeofthescorchingcore";
+    public static final String FEATHERDUST = "featherdust";
+    public static final String FEATHEREDASH = "featheredash";
+    public static final String EMERALDSTRING = "emeraldstring";
+    public static final String WINDMAKERSBLADE = "windmakersblade";
   }
 
   public static class Block {
     public static final String SLATE = "slate";
     public static final String CRAFTING_RUNE = "craftingrune";
+    public static final String EMERALDCLOTH = "emeraldcloth";
   }
 
   public static class AMP {
