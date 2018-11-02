@@ -16,8 +16,8 @@ public class ModBlocks {
 
   public static LinkedList<BlockMod> modBlocks = new LinkedList<>();
 
-  public static Block slate = new BlockMod(Dictionary.Block.SLATE);
-  public static BlockCraftingRune craftingRune = new BlockCraftingRune();
+  public static Block SLATE = new BlockMod(Dictionary.Block.SLATE);
+  public static BlockCraftingRune CRAFTINGRUNE = new BlockCraftingRune();
 
   @SubscribeEvent
   public static void registerBlocks(RegistryEvent.Register<Block> event) {
