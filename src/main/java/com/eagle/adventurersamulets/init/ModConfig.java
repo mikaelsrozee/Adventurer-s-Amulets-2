@@ -10,6 +10,7 @@ public final class ModConfig {
   public static int pestleDurability = 31;
   public static int windmakersHeight = 127;
   public static int earthboundHeight = 30;
+  public static int searingMaxAMP = 1000;
 
   public static boolean runicTransformation = true;
 
@@ -27,6 +28,7 @@ public final class ModConfig {
     config.addCustomCategoryComment(category, "Allows for the tweaking of the AMP system.");
     windmakersHeight = config.getInt("windmakersHeight", category, windmakersHeight, 0, 255, "The height above which Windmaker's items will charge.");
     earthboundHeight = config.getInt("earthboundHeight", category, earthboundHeight, 0, 255, "The height below which Earthbound items will charge.");
+    searingMaxAMP = config.getInt("searingMaxAMP", category, searingMaxAMP, 0, Integer.MAX_VALUE, "The maximum AMP that the Searing Iron/Gemstone can store.");
 
     category = "Blocks";
     config.addCustomCategoryComment(category, "Allows for the tweaking of non-AMP-related blocks.");

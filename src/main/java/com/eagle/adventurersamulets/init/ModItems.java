@@ -6,6 +6,7 @@ import com.eagle.adventurersamulets.blocks.BlockMod;
 import com.eagle.adventurersamulets.items.ItemBlockMod;
 import com.eagle.adventurersamulets.items.ItemMod;
 import com.eagle.adventurersamulets.items.ItemPestle;
+import com.eagle.adventurersamulets.items.ItemSearing;
 import java.util.LinkedList;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -22,6 +23,9 @@ public class ModItems {
 
   public static ItemPestle PESTLE = new ItemPestle();
   public static ItemMod ASH = new ItemMod(Dictionary.Item.ASH);
+  public static ItemSearing GEMSTONE = new ItemSearing(Dictionary.Item.SEARINGGEMSTONE);
+  public static ItemSearing IRON = new ItemSearing(Dictionary.Item.SEARINGIRON);
+  public static ItemMod SLATEROD = new ItemMod(Dictionary.Item.SLATEROD);
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {

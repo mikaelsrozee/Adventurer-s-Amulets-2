@@ -14,6 +14,9 @@ public class Dictionary {
   public static class Item {
     public static final String PESTLE = "pestle";
     public static final String ASH = "ash";
+    public static final String SEARINGIRON = "searingiron";
+    public static final String SEARINGGEMSTONE = "searinggemstone";
+    public static final String SLATEROD = "slaterod";
   }
 
   public static class Block {

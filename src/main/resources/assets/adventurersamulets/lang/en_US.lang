@@ -1,5 +1,8 @@
 item.pestle.name=Pestle
 item.ash.name=Ash
+item.slaterod.name=Slate Rod
+item.searinggemstone.name=Searing Gemstone
+item.searingiron.name=Searing Iron
 
 tile.slate.name=Slate
 tile.craftingrune.name=Crafting Rune
@@ -20,3 +23,5 @@ amptype.earthbound.name=Earthbound
 amptype.transposing.name=Transposing
 amptype.frostbitten.name=Frostbitten
 amptype.fairy.name=Fairy
+
+amptype.currentAMP=AMP
