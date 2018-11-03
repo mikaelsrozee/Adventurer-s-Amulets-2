@@ -19,6 +19,7 @@ public final class ModConfig {
   public static int searingMaxAMP = 1000;
   public static boolean fortuneSmelting = true;
   public static int scorchingCoreMaxAMP = 1000;
+  public static int waterWalkerMaxAMP = 1000;
   public static int windmakersBladeMaxAMP = 1000;
   public static int windmakersBladeDashCost = 5;
   public static int windmakersBladeDashCooldown = 25;
@@ -51,6 +52,7 @@ public final class ModConfig {
     windmakersBladeMaxAMP = config.getInt("windmakersBladeMaxAMP", category, windmakersBladeMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Windmaker's Blade can store.");
     windmakersBladeDashCost = config.getInt("windmakersBladeDashCost", category, windmakersBladeDashCost, 0, windmakersBladeMaxAMP, "The AMP cost per dash.");
     windmakersBladeDashCooldown = config.getInt("windmakersBladeDashCooldown", category, windmakersBladeDashCooldown, 0, Integer.MAX_VALUE, "The time, in ticks, for the cooldown of the Blade's dash ability.");
+    waterWalkerMaxAMP = config.getInt("waterWalkerMaxAMP", category, waterWalkerMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Belt of the Water Walker can store.");
 
     category = "Blocks";
     config.addCustomCategoryComment(category, "Allows for the tweaking of non-AMP-related blocks.");

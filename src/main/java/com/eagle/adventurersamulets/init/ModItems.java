@@ -8,6 +8,7 @@ import com.eagle.adventurersamulets.items.ItemMod;
 import com.eagle.adventurersamulets.items.ItemPestle;
 import com.eagle.adventurersamulets.items.ItemSearing;
 import com.eagle.adventurersamulets.items.ItemSmeltingPickaxe;
+import com.eagle.adventurersamulets.items.ItemWaterWalkBelt;
 import com.eagle.adventurersamulets.items.ItemWindmakersBlade;
 import java.util.LinkedList;
 import net.minecraft.item.Item;
@@ -36,6 +37,7 @@ public class ModItems {
   public static ItemMod EMERALDSTRING = new ItemMod(Dictionary.Item.EMERALDSTRING);
   public static ItemMod FEATHEREDASH = new ItemMod(Dictionary.Item.FEATHEREDASH);
   public static ItemWindmakersBlade WINDMAKERSBLADE = new ItemWindmakersBlade();
+  public static ItemWaterWalkBelt WATERWALKBELT = new ItemWaterWalkBelt();
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {
