@@ -25,6 +25,7 @@ public class ModRecipes {
     AdvAmAPI.registerPestleRecipe(new ItemStack(Items.MELON_SEEDS, 3), Items.MELON);
     AdvAmAPI.registerPestleRecipe(new ItemStack(ModItems.ASH, 1), new ItemStack(Items.COAL, 1, 1));
     AdvAmAPI.registerPestleRecipe(new ItemStack(ModItems.FEATHERDUST, 1), Items.FEATHER);
+    AdvAmAPI.registerPestleRecipe(new ItemStack(ModItems.OCEANICDUST, 1), Items.PRISMARINE_CRYSTALS);
   }
 
   private static void initCraftingRuneRecipes() {

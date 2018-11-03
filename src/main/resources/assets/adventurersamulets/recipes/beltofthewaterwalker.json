@@ -1,0 +1,27 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "LLL",
+    "LDL",
+    "OGO"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "D": {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    "G": {
+      "type": "forge:ore_dict",
+      "ore": "ingotGold"
+    },
+    "O": {
+      "item": "adventurersamulets:oceanicdust"
+    }
+  },
+  "result": {
+    "item": "adventurersamulets:beltofthewaterwalker"
+  }
+}

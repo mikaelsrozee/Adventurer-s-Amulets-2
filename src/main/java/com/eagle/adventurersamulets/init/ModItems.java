@@ -38,6 +38,7 @@ public class ModItems {
   public static ItemMod FEATHEREDASH = new ItemMod(Dictionary.Item.FEATHEREDASH);
   public static ItemWindmakersBlade WINDMAKERSBLADE = new ItemWindmakersBlade();
   public static ItemWaterWalkBelt WATERWALKBELT = new ItemWaterWalkBelt();
+  public static ItemMod OCEANICDUST = new ItemMod(Dictionary.Item.OCEANICDUST);
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {

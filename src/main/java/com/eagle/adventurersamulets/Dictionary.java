@@ -23,6 +23,7 @@ public class Dictionary {
     public static final String EMERALDSTRING = "emeraldstring";
     public static final String WINDMAKERSBLADE = "windmakersblade";
     public static final String WATERWALKBELT = "beltofthewaterwalker";
+    public static final String OCEANICDUST = "oceanicdust";
   }
 
   public static class Block {
