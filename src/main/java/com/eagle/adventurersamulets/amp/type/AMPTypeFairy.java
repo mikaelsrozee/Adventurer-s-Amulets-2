@@ -20,7 +20,7 @@ public class AMPTypeFairy implements IAMPType {
 
   @Override
   public boolean isChargeConditionCorrect(EntityPlayer player) {
-    return player.getHealth() == player.getMaxHealth();
+    return player.experience > 1;
   }
 
 }
