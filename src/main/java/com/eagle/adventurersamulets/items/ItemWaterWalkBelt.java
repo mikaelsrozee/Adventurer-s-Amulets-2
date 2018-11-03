@@ -14,6 +14,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -41,6 +42,13 @@ public class ItemWaterWalkBelt extends ItemMod implements IBauble, IAMPItem {
   public void onWornTick(ItemStack itemStack, EntityLivingBase entity) {
     BlockPos posBelow = entity.getPosition().add(0, -1, 0);
     IBlockState blockStateBelow = entity.world.getBlockState(posBelow);
+
+    if (entity instanceof EntityPlayer) {
+      EntityPlayer player = (EntityPlayer) entity;
+
+      if (getAMPType(itemStack).isChargeConditionCorrect(player) && getCurrentAMP(itemStack) < getMaximumAMP(itemStack))
+        setCurrentAMP(itemStack, getCurrentAMP(itemStack) + 1);
+    }
 
     if (entity.isSneaking() || getCurrentAMP(itemStack) == 0)
       return;
