@@ -23,6 +23,8 @@ public final class ModConfig {
   public static int windmakersBladeMaxAMP = 1000;
   public static int windmakersBladeDashCost = 5;
   public static int windmakersBladeDashCooldown = 25;
+  public static int smoulderingCloakMaxAMP = 1000;
+  public static int smoulderingCloakCost = 5;
 
   public static boolean runicTransformation = true;
 
@@ -53,6 +55,8 @@ public final class ModConfig {
     windmakersBladeDashCost = config.getInt("windmakersBladeDashCost", category, windmakersBladeDashCost, 0, windmakersBladeMaxAMP, "The AMP cost per dash.");
     windmakersBladeDashCooldown = config.getInt("windmakersBladeDashCooldown", category, windmakersBladeDashCooldown, 0, Integer.MAX_VALUE, "The time, in ticks, for the cooldown of the Blade's dash ability.");
     waterWalkerMaxAMP = config.getInt("waterWalkerMaxAMP", category, waterWalkerMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Belt of the Water Walker can store.");
+    smoulderingCloakMaxAMP = config.getInt("smoulderingCloakMaxAMP", category, smoulderingCloakMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Smouldering Cloak can store.");
+    smoulderingCloakCost = config.getInt("smoulderingCloakCost", category, smoulderingCloakCost, 0, smoulderingCloakMaxAMP, "The AMP cost per operation.");
 
     category = "Blocks";
     config.addCustomCategoryComment(category, "Allows for the tweaking of non-AMP-related blocks.");

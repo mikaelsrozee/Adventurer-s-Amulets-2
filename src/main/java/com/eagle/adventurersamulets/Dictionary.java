@@ -24,6 +24,7 @@ public class Dictionary {
     public static final String WINDMAKERSBLADE = "windmakersblade";
     public static final String WATERWALKBELT = "beltofthewaterwalker";
     public static final String OCEANICDUST = "oceanicdust";
+    public static final String SMOULDERINGCLOAK = "smoulderingcloak";
   }
 
   public static class Block {

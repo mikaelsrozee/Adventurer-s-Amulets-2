@@ -35,6 +35,7 @@ public class AdventurersAmulets {
     ModAMP.registerAMPTypes();
     MinecraftForge.EVENT_BUS.register(new ModInteractHandler());
     MinecraftForge.EVENT_BUS.register(ModItems.SMELTINGPICKAXE);
+    MinecraftForge.EVENT_BUS.register(ModItems.SMOULDERINGCLOAK);
   }
 
   @EventHandler
