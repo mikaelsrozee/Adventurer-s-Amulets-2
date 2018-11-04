@@ -36,6 +36,7 @@ public class AdventurersAmulets {
     MinecraftForge.EVENT_BUS.register(new ModInteractHandler());
     MinecraftForge.EVENT_BUS.register(ModItems.SMELTINGPICKAXE);
     MinecraftForge.EVENT_BUS.register(ModItems.SMOULDERINGCLOAK);
+    MinecraftForge.EVENT_BUS.register(ModItems.SNOWFLAKEVEIL);
   }
 
   @EventHandler

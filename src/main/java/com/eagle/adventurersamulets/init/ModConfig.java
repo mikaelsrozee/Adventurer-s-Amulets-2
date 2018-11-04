@@ -25,6 +25,8 @@ public final class ModConfig {
   public static int windmakersBladeDashCooldown = 25;
   public static int smoulderingCloakMaxAMP = 1000;
   public static int smoulderingCloakCost = 5;
+  public static int snowflakeVeilMaxAMP = 1000;
+  public static int snowflakeVeilCost = 5;
 
   public static boolean runicTransformation = true;
 
@@ -57,7 +59,9 @@ public final class ModConfig {
     waterWalkerMaxAMP = config.getInt("waterWalkerMaxAMP", category, waterWalkerMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Belt of the Water Walker can store.");
     smoulderingCloakMaxAMP = config.getInt("smoulderingCloakMaxAMP", category, smoulderingCloakMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Smouldering Cloak can store.");
     smoulderingCloakCost = config.getInt("smoulderingCloakCost", category, smoulderingCloakCost, 0, smoulderingCloakMaxAMP, "The AMP cost per operation.");
-
+    snowflakeVeilMaxAMP = config.getInt("snowflakeVeilMaxAMP", category, snowflakeVeilMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Snowflake Veil can store.");
+    snowflakeVeilCost = config.getInt("snowflakeVeilCost", category, snowflakeVeilCost, 0, snowflakeVeilMaxAMP, "The AMP cost per operation.");
+    
     category = "Blocks";
     config.addCustomCategoryComment(category, "Allows for the tweaking of non-AMP-related blocks.");
     runicTransformation = config.getBoolean("runicTransformation", category, runicTransformation, "Set to false to disable the transmutation (Wood > Obsidian, Diamond > Gold > Iron) recipes.");
