@@ -77,7 +77,7 @@ public class ItemWaterWalkBelt extends ItemMod implements IBauble, IAMPItem {
       itemStack.setTagCompound(new NBTTagCompound());
 
     if (!itemStack.getTagCompound().hasKey("AMP")) {
-      itemStack.getTagCompound().setInteger("AMP", 0);
+      itemStack.getTagCompound().setInteger("AMP", ModConfig.ampInitial);
       return ModConfig.ampInitial;
     }
 
