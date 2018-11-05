@@ -30,6 +30,7 @@ public class ItemSmoulderingCloak extends ItemMod implements IBauble, IAMPItem {
 
   public ItemSmoulderingCloak() {
     super(Item.SMOULDERINGCLOAK);
+    setMaxStackSize(1);
   }
 
   @SideOnly(Side.CLIENT)

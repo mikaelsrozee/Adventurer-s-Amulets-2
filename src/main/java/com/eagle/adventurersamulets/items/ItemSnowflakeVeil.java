@@ -29,6 +29,7 @@ public class ItemSnowflakeVeil extends ItemMod implements IBauble, IAMPItem {
 
   public ItemSnowflakeVeil() {
     super(Item.SNOWFLAKEVEIL);
+    setMaxStackSize(1);
   }
 
   @SideOnly(Side.CLIENT)

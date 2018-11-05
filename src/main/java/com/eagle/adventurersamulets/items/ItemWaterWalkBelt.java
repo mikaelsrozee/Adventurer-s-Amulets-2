@@ -26,6 +26,7 @@ public class ItemWaterWalkBelt extends ItemMod implements IBauble, IAMPItem {
 
   public ItemWaterWalkBelt() {
     super(Dictionary.Item.WATERWALKBELT);
+    setMaxStackSize(1);
   }
 
   @SideOnly(Side.CLIENT)
