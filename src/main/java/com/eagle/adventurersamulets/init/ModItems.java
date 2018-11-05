@@ -3,6 +3,7 @@ package com.eagle.adventurersamulets.init;
 import com.eagle.adventurersamulets.Dictionary;
 import com.eagle.adventurersamulets.Dictionary.Core;
 import com.eagle.adventurersamulets.blocks.BlockMod;
+import com.eagle.adventurersamulets.items.ItemAntiGravRing;
 import com.eagle.adventurersamulets.items.ItemBlockMod;
 import com.eagle.adventurersamulets.items.ItemMod;
 import com.eagle.adventurersamulets.items.ItemPestle;
@@ -45,6 +46,7 @@ public class ModItems {
   public static ItemMod OCEANICDUST = new ItemMod(Dictionary.Item.OCEANICDUST);
   public static ItemSmoulderingCloak SMOULDERINGCLOAK = new ItemSmoulderingCloak();
   public static ItemSnowflakeVeil SNOWFLAKEVEIL = new ItemSnowflakeVeil();
+  public static ItemAntiGravRing ANTIGRAVRING = new ItemAntiGravRing();
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {

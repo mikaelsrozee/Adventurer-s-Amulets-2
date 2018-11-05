@@ -27,6 +27,8 @@ public final class ModConfig {
   public static int smoulderingCloakCost = 5;
   public static int snowflakeVeilMaxAMP = 1000;
   public static int snowflakeVeilCost = 5;
+  public static int antiGravRingMaxAMP = 1000;
+  public static int antiGravRingCost = 5;
 
   public static boolean runicTransformation = true;
 
@@ -90,6 +92,12 @@ public final class ModConfig {
             "Maximum AMP that the Snowflake Veil can store.");
     snowflakeVeilCost = config
         .getInt("snowflakeVeilCost", category, snowflakeVeilCost, 0, snowflakeVeilMaxAMP,
+            "The AMP cost per operation.");
+    antiGravRingMaxAMP = config
+        .getInt("antiGravRingMaxAMP", category, antiGravRingMaxAMP, 0, Integer.MAX_VALUE,
+            "Maximum AMP that the Anti-Gravity Ring can store.");
+    antiGravRingCost = config
+        .getInt("antiGravRingCost", category, antiGravRingCost, 0, antiGravRingMaxAMP,
             "The AMP cost per operation.");
 
     category = "Blocks";
