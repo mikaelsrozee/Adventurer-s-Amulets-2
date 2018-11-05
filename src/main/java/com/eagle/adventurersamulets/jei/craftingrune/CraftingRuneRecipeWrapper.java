@@ -28,15 +28,17 @@ public class CraftingRuneRecipeWrapper implements IRecipeWrapper {
 
     for (Object object : recipeCraftingRune.getInput()) {
       if (object instanceof Block) {
-        if (object != Blocks.AIR)
+        if (object != Blocks.AIR) {
           builder.add(Collections.singletonList(new ItemStack((Block) object)));
+        }
       } else if (object instanceof String) {
         builder.add(OreDictionary.getOres((String) object));
       }
     }
 
     input = builder.build();
-    output = new ItemStack(recipeCraftingRune.getOutput().getBlock(), recipeCraftingRune.getOutputQuantity());
+    output = new ItemStack(recipeCraftingRune.getOutput().getBlock(),
+        recipeCraftingRune.getOutputQuantity());
     this.recipeCraftingRune = recipeCraftingRune;
   }
 
@@ -47,8 +49,11 @@ public class CraftingRuneRecipeWrapper implements IRecipeWrapper {
   }
 
   @Override
-  public void drawInfo(@Nonnull Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY) {
-    minecraft.fontRenderer.drawString(I18n.format("jei.gui.craftingrune.tierRequired") + " " + recipeCraftingRune.getTierRequired(), 56, 44, 0);
+  public void drawInfo(@Nonnull Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX,
+      int mouseY) {
+    minecraft.fontRenderer.drawString(
+        I18n.format("jei.gui.craftingrune.tierRequired") + " " + recipeCraftingRune
+            .getTierRequired(), 56, 44, 0);
   }
 
   @Nonnull
@@ -63,7 +68,8 @@ public class CraftingRuneRecipeWrapper implements IRecipeWrapper {
   }
 
   @Override
-  public boolean handleClick(@Nonnull Minecraft minecraft, int mouseX, int mouseY, int mouseButton) {
+  public boolean handleClick(@Nonnull Minecraft minecraft, int mouseX, int mouseY,
+      int mouseButton) {
     return false;
   }
 

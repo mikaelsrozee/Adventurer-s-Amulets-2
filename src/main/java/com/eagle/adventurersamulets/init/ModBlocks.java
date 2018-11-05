@@ -20,7 +20,8 @@ public class ModBlocks {
 
   public static Block SLATE = new BlockMod(Dictionary.Block.SLATE);
   public static BlockCraftingRune CRAFTINGRUNE = new BlockCraftingRune();
-  public static Block EMERALDCLOTH = new BlockMod(Dictionary.Block.EMERALDCLOTH, Material.CLOTH, SoundType.CLOTH).setHardness(2.0F).setLightLevel(2.0F);
+  public static Block EMERALDCLOTH = new BlockMod(Dictionary.Block.EMERALDCLOTH, Material.CLOTH,
+      SoundType.CLOTH).setHardness(2.0F).setLightLevel(2.0F);
 
   @SubscribeEvent
   public static void registerBlocks(RegistryEvent.Register<Block> event) {

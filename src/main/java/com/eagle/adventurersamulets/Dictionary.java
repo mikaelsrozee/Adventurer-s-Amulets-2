@@ -3,6 +3,7 @@ package com.eagle.adventurersamulets;
 public class Dictionary {
 
   public static class Core {
+
     public static final String MOD_ID = "adventurersamulets";
     public static final String MOD_NAME = "Adventurer's Amulets";
     public static final String VERSION = "2.0.0-ALPHA1";
@@ -12,6 +13,7 @@ public class Dictionary {
   }
 
   public static class Item {
+
     public static final String PESTLE = "pestle";
     public static final String ASH = "ash";
     public static final String SEARINGIRON = "searingiron";
@@ -29,12 +31,14 @@ public class Dictionary {
   }
 
   public static class Block {
+
     public static final String SLATE = "slate";
     public static final String CRAFTING_RUNE = "craftingrune";
     public static final String EMERALDCLOTH = "emeraldcloth";
   }
 
   public static class AMP {
+
     public static final String AQUATIC_ID = "aquatic";
     public static final String EARTHBOUND_ID = "earthbound";
     public static final String FAIRY_ID = "fairy";

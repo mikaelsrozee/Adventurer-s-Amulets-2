@@ -24,7 +24,8 @@ public class RecipeCraftingRune {
     this(output, outputQuantity, 0, input);
   }
 
-  public RecipeCraftingRune(IBlockState output, int outputQuantity, int tierRequired, Object... input) {
+  public RecipeCraftingRune(IBlockState output, int outputQuantity, int tierRequired,
+      Object... input) {
     this.input = input;
     this.output = output;
     this.outputQuantity = outputQuantity;
@@ -32,7 +33,8 @@ public class RecipeCraftingRune {
     checkArguments(output, outputQuantity, tierRequired, input);
   }
 
-  private void checkArguments(IBlockState output, int outputQuantity, int tierRequired, Object... input) {
+  private void checkArguments(IBlockState output, int outputQuantity, int tierRequired,
+      Object... input) {
     if ((input.length != 8)) {
       throw new IllegalArgumentException("Input must be 8 components in length");
     }

@@ -30,7 +30,9 @@ public class PestleRecipeCategory implements IRecipeCategory {
   public PestleRecipeCategory(IGuiHelper guiHelper) {
     background = guiHelper.createBlankDrawable(96, 28);
     localizedName = I18n.format(Core.MOD_ID + ".jei." + Item.PESTLE);
-    overlay = guiHelper.createDrawable(new ResourceLocation(Core.MOD_ID, "textures/gui/jei/" + Item.PESTLE + ".png"), 0, 0, 96, 28);
+    overlay = guiHelper.createDrawable(
+        new ResourceLocation(Core.MOD_ID, "textures/gui/jei/" + Item.PESTLE + ".png"), 0, 0, 96,
+        28);
   }
 
   @Nonnull
@@ -69,9 +71,11 @@ public class PestleRecipeCategory implements IRecipeCategory {
   }
 
   @Override
-  public void setRecipe(@Nonnull IRecipeLayout recipeLayout, @Nonnull IRecipeWrapper recipeWrapper, @Nonnull IIngredients ingredients) {
-    if (!(recipeWrapper instanceof PestleRecipeWrapper))
+  public void setRecipe(@Nonnull IRecipeLayout recipeLayout, @Nonnull IRecipeWrapper recipeWrapper,
+      @Nonnull IIngredients ingredients) {
+    if (!(recipeWrapper instanceof PestleRecipeWrapper)) {
       return;
+    }
 
     IGuiItemStackGroup guiItemStacks = recipeLayout.getItemStacks();
 
@@ -80,7 +84,6 @@ public class PestleRecipeCategory implements IRecipeCategory {
 
     List<ItemStack> input = ingredients.getInputs(VanillaTypes.ITEM).get(0);
     List<ItemStack> output = ingredients.getOutputs(VanillaTypes.ITEM).get(0);
-
 
     guiItemStacks.set(0, input);
     guiItemStacks.set(1, output);

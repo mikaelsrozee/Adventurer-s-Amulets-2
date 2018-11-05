@@ -23,6 +23,14 @@ import net.minecraft.item.ItemStack;
 @JEIPlugin
 public class AdvAmJEIPlugin implements IModPlugin {
 
+  public static void drawOverlay(IDrawable overlay, Minecraft minecraft) {
+    GlStateManager.enableAlpha();
+    GlStateManager.enableBlend();
+    overlay.draw(minecraft, 0, 0);
+    GlStateManager.disableBlend();
+    GlStateManager.disableAlpha();
+  }
+
   @Override
   public void registerCategories(IRecipeCategoryRegistration registry) {
     registry.addRecipeCategories(new PestleRecipeCategory(registry.getJeiHelpers().getGuiHelper()),
@@ -32,23 +40,18 @@ public class AdvAmJEIPlugin implements IModPlugin {
   @Override
   public void register(@Nonnull IModRegistry registry) {
     registry.handleRecipes(RecipePestle.class, PestleRecipeWrapper::new, PestleRecipeCategory.UID);
-    registry.handleRecipes(RecipeCraftingRune.class, CraftingRuneRecipeWrapper::new, CraftingRuneRecipeCategory.UID);
+    registry.handleRecipes(RecipeCraftingRune.class, CraftingRuneRecipeWrapper::new,
+        CraftingRuneRecipeCategory.UID);
 
     registry.addRecipes(AdvAmAPI.pestleRecipes, PestleRecipeCategory.UID);
     registry.addRecipes(AdvAmAPI.craftingRuneRecipes, CraftingRuneRecipeCategory.UID);
 
     registry.addRecipeCatalyst(new ItemStack(ModItems.PESTLE), PestleRecipeCategory.UID);
-    registry.addRecipeCatalyst(new ItemStack(ModBlocks.CRAFTINGRUNE), CraftingRuneRecipeCategory.UID);
+    registry
+        .addRecipeCatalyst(new ItemStack(ModBlocks.CRAFTINGRUNE), CraftingRuneRecipeCategory.UID);
 
-    registry.addIngredientInfo(new ItemStack(ModBlocks.CRAFTINGRUNE), VanillaTypes.ITEM, "jei.gui.craftingrune.desc");
-  }
-
-  public static void drawOverlay(IDrawable overlay, Minecraft minecraft) {
-    GlStateManager.enableAlpha();
-    GlStateManager.enableBlend();
-    overlay.draw(minecraft, 0, 0);
-    GlStateManager.disableBlend();
-    GlStateManager.disableAlpha();
+    registry.addIngredientInfo(new ItemStack(ModBlocks.CRAFTINGRUNE), VanillaTypes.ITEM,
+        "jei.gui.craftingrune.desc");
   }
 
 }

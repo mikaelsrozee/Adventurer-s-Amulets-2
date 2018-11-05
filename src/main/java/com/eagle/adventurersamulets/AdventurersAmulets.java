@@ -19,10 +19,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Core.MOD_ID, name = Core.MOD_NAME, version = Core.VERSION, dependencies = Core.DEPENDENCIES)
 public class AdventurersAmulets {
 
+  public static final ModCreativeTab creativeTab = new ModCreativeTab();
   @SidedProxy(clientSide = Core.CLIENT_PROXY_CLASS, serverSide = Core.COMMON_PROXY_CLASS)
   public static CommonProxy proxy;
-
-  public static final ModCreativeTab creativeTab = new ModCreativeTab();
 
   @EventHandler
   public static void preInit(FMLPreInitializationEvent event) {

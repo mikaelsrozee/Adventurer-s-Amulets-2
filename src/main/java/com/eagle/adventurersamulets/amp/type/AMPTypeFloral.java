@@ -20,7 +20,8 @@ public class AMPTypeFloral implements IAMPType {
 
   @Override
   public boolean isChargeConditionCorrect(EntityPlayer player) {
-    return player.getEntityWorld().canBlockSeeSky(player.getPosition()) && player.getEntityWorld().isDaytime();
+    return player.getEntityWorld().canBlockSeeSky(player.getPosition()) && player.getEntityWorld()
+        .isDaytime();
   }
 
 }

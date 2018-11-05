@@ -1,9 +1,7 @@
 package com.eagle.adventurersamulets.jei.craftingrune;
 
-import com.eagle.adventurersamulets.Dictionary;
 import com.eagle.adventurersamulets.Dictionary.Block;
 import com.eagle.adventurersamulets.Dictionary.Core;
-import com.eagle.adventurersamulets.Dictionary.Item;
 import com.eagle.adventurersamulets.jei.AdvAmJEIPlugin;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +28,9 @@ public class CraftingRuneRecipeCategory implements IRecipeCategory {
   public CraftingRuneRecipeCategory(IGuiHelper guiHelper) {
     background = guiHelper.createBlankDrawable(131, 54);
     localizedName = I18n.format(Core.MOD_ID + ".jei." + Block.CRAFTING_RUNE);
-    overlay = guiHelper.createDrawable(new ResourceLocation(Core.MOD_ID, "textures/gui/jei/" + Block.CRAFTING_RUNE + ".png"), 0, 0, 131, 54);
+    overlay = guiHelper.createDrawable(
+        new ResourceLocation(Core.MOD_ID, "textures/gui/jei/" + Block.CRAFTING_RUNE + ".png"), 0, 0,
+        131, 54);
   }
 
   @Nonnull
@@ -68,7 +68,8 @@ public class CraftingRuneRecipeCategory implements IRecipeCategory {
   }
 
   @Override
-  public void setRecipe(@Nonnull IRecipeLayout recipeLayout, @Nonnull IRecipeWrapper recipeWrapper, @Nonnull IIngredients ingredients) {
+  public void setRecipe(@Nonnull IRecipeLayout recipeLayout, @Nonnull IRecipeWrapper recipeWrapper,
+      @Nonnull IIngredients ingredients) {
     IGuiItemStackGroup guiItemStacks = recipeLayout.getItemStacks();
 
     guiItemStacks.init(0, false, 94, 18);

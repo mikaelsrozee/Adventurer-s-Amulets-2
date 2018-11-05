@@ -29,15 +29,19 @@ public class ItemPestle extends ItemMod {
 
   @Nonnull
   @Override
-  public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+  public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand,
+      EnumFacing facing, float hitX, float hitY, float hitZ) {
     if (world.getBlockState(pos) == Blocks.STONE.getDefaultState() && hitY == 1.0) {
-      List entityItems = world.getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(pos, pos.add(1, 2, 1)));
+      List entityItems = world
+          .getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(pos, pos.add(1, 2, 1)));
       for (Object obj : entityItems) {
         if (obj instanceof EntityItem) {
           EntityItem entityItem = (EntityItem) obj;
           for (RecipePestle recipe : AdvAmAPI.pestleRecipes) {
-            if (recipe.matches(entityItem.getItem(), recipe) && entityItem.getItem().getCount() == 1) {
-              world.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, entityItem.posX, entityItem.posY, entityItem.posZ, 0.0D, 0.0D, 0.0D);
+            if (recipe.matches(entityItem.getItem(), recipe)
+                && entityItem.getItem().getCount() == 1) {
+              world.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, entityItem.posX, entityItem.posY,
+                  entityItem.posZ, 0.0D, 0.0D, 0.0D);
               if (!world.isRemote) {
                 entityItem.setItem(recipe.getOutput().copy());
                 player.getHeldItem(hand).damageItem(1, player);

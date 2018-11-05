@@ -19,10 +19,11 @@ public class PestleRecipeWrapper implements IRecipeWrapper {
   public PestleRecipeWrapper(RecipePestle recipePestle) {
     ImmutableList.Builder<List<ItemStack>> builder = ImmutableList.builder();
 
-    if (recipePestle.getInput() instanceof ItemStack)
+    if (recipePestle.getInput() instanceof ItemStack) {
       builder.add(ImmutableList.of((ItemStack) recipePestle.getInput()));
-    else if (recipePestle.getInput() instanceof String)
+    } else if (recipePestle.getInput() instanceof String) {
       builder.add(OreDictionary.getOres((String) recipePestle.getInput()));
+    }
 
     input = builder.build();
     output = recipePestle.getOutput();
@@ -35,7 +36,8 @@ public class PestleRecipeWrapper implements IRecipeWrapper {
   }
 
   @Override
-  public void drawInfo(@Nonnull Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY) {
+  public void drawInfo(@Nonnull Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX,
+      int mouseY) {
 
   }
 
@@ -46,7 +48,8 @@ public class PestleRecipeWrapper implements IRecipeWrapper {
   }
 
   @Override
-  public boolean handleClick(@Nonnull Minecraft minecraft, int mouseX, int mouseY, int mouseButton) {
+  public boolean handleClick(@Nonnull Minecraft minecraft, int mouseX, int mouseY,
+      int mouseButton) {
     return false;
   }
 

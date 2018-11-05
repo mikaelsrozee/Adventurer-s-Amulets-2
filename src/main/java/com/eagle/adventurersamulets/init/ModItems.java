@@ -27,7 +27,9 @@ public class ModItems {
   public static LinkedList<ItemMod> modItems = new LinkedList<>();
   public static LinkedList<ItemBlockMod> modItemBlocks = new LinkedList<>();
 
-  public static Item.ToolMaterial ampToolMaterial = EnumHelper.addToolMaterial("AMPToolMaterial", ModConfig.ampMiningLevel, ModConfig.ampMaxUses, ModConfig.ampEfficiency, ModConfig.ampDamage, ModConfig.ampEnchantability);
+  public static Item.ToolMaterial ampToolMaterial = EnumHelper
+      .addToolMaterial("AMPToolMaterial", ModConfig.ampMiningLevel, ModConfig.ampMaxUses,
+          ModConfig.ampEfficiency, ModConfig.ampDamage, ModConfig.ampEnchantability);
 
   public static ItemPestle PESTLE = new ItemPestle();
   public static ItemMod ASH = new ItemMod(Dictionary.Item.ASH);
@@ -56,11 +58,13 @@ public class ModItems {
 
   @SubscribeEvent
   public static void registerItemModels(ModelRegistryEvent event) {
-    for (ItemMod item : modItems)
+    for (ItemMod item : modItems) {
       item.initModel();
+    }
 
-    for (BlockMod block : ModBlocks.modBlocks)
+    for (BlockMod block : ModBlocks.modBlocks) {
       block.initModel();
+    }
 
     SMELTINGPICKAXE.initModel();
     WINDMAKERSBLADE.initModel();

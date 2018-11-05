@@ -42,36 +42,70 @@ public final class ModConfig {
 
     category = "AMP";
     config.addCustomCategoryComment(category, "Allows for the tweaking of the AMP system.");
-    ampInitial = config.getInt("AMPInitial", category, ampInitial, 0, Integer.MAX_VALUE, "The amount of AMP in any AMP item when it is first crafted.");
-    ampMiningLevel = config.getInt("AMPMiningLevel", category, ampMiningLevel, -1, Integer.MAX_VALUE, "Mining Level for AMP tools.");
-    ampMaxUses = config.getInt("AMPMaxUses", category, ampMaxUses, -1, Integer.MAX_VALUE, "Durability of AMP tools.");
-    ampEfficiency = config.getFloat("AMPEfficiency", category, ampEfficiency, 0, Float.MAX_VALUE, "Mining speed of AMP tools.");
-    ampDamage = config.getFloat("AMPDamage", category, ampDamage, 0, Float.MAX_VALUE, "Damage of AMP tools.");
-    ampEnchantability = config.getInt("AMPEnchantability", category, ampEnchantability, 0, Integer.MAX_VALUE, "Enchantability of AMP tools.");
-    windmakersHeight = config.getInt("windmakersHeight", category, windmakersHeight, 0, 255, "The height above which Windmaker's items will charge.");
-    earthboundHeight = config.getInt("earthboundHeight", category, earthboundHeight, 0, 255, "The height below which Earthbound items will charge.");
-    searingMaxAMP = config.getInt("searingMaxAMP", category, searingMaxAMP, 0, Integer.MAX_VALUE, "The maximum AMP that the Searing Iron/Gemstone can store.");
-    fortuneSmelting = config.getBoolean("fortuneSmelting", category, fortuneSmelting, "Set to false to disable the fortune multiplier on the Pickaxe of the Scorching Core when it is enchanted with fortune.");
-    scorchingCoreMaxAMP = config.getInt("scorchingCoreMaxAMP", category, scorchingCoreMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Pickaxe of the Scorching Core can store.");
-    windmakersBladeMaxAMP = config.getInt("windmakersBladeMaxAMP", category, windmakersBladeMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Windmaker's Blade can store.");
-    windmakersBladeDashCost = config.getInt("windmakersBladeDashCost", category, windmakersBladeDashCost, 0, windmakersBladeMaxAMP, "The AMP cost per dash.");
-    windmakersBladeDashCooldown = config.getInt("windmakersBladeDashCooldown", category, windmakersBladeDashCooldown, 0, Integer.MAX_VALUE, "The time, in ticks, for the cooldown of the Blade's dash ability.");
-    waterWalkerMaxAMP = config.getInt("waterWalkerMaxAMP", category, waterWalkerMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Belt of the Water Walker can store.");
-    smoulderingCloakMaxAMP = config.getInt("smoulderingCloakMaxAMP", category, smoulderingCloakMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Smouldering Cloak can store.");
-    smoulderingCloakCost = config.getInt("smoulderingCloakCost", category, smoulderingCloakCost, 0, smoulderingCloakMaxAMP, "The AMP cost per operation.");
-    snowflakeVeilMaxAMP = config.getInt("snowflakeVeilMaxAMP", category, snowflakeVeilMaxAMP, 0, Integer.MAX_VALUE, "Maximum AMP that the Snowflake Veil can store.");
-    snowflakeVeilCost = config.getInt("snowflakeVeilCost", category, snowflakeVeilCost, 0, snowflakeVeilMaxAMP, "The AMP cost per operation.");
-    
+    ampInitial = config.getInt("AMPInitial", category, ampInitial, 0, Integer.MAX_VALUE,
+        "The amount of AMP in any AMP item when it is first crafted.");
+    ampMiningLevel = config
+        .getInt("AMPMiningLevel", category, ampMiningLevel, -1, Integer.MAX_VALUE,
+            "Mining Level for AMP tools.");
+    ampMaxUses = config.getInt("AMPMaxUses", category, ampMaxUses, -1, Integer.MAX_VALUE,
+        "Durability of AMP tools.");
+    ampEfficiency = config.getFloat("AMPEfficiency", category, ampEfficiency, 0, Float.MAX_VALUE,
+        "Mining speed of AMP tools.");
+    ampDamage = config
+        .getFloat("AMPDamage", category, ampDamage, 0, Float.MAX_VALUE, "Damage of AMP tools.");
+    ampEnchantability = config
+        .getInt("AMPEnchantability", category, ampEnchantability, 0, Integer.MAX_VALUE,
+            "Enchantability of AMP tools.");
+    windmakersHeight = config.getInt("windmakersHeight", category, windmakersHeight, 0, 255,
+        "The height above which Windmaker's items will charge.");
+    earthboundHeight = config.getInt("earthboundHeight", category, earthboundHeight, 0, 255,
+        "The height below which Earthbound items will charge.");
+    searingMaxAMP = config.getInt("searingMaxAMP", category, searingMaxAMP, 0, Integer.MAX_VALUE,
+        "The maximum AMP that the Searing Iron/Gemstone can store.");
+    fortuneSmelting = config.getBoolean("fortuneSmelting", category, fortuneSmelting,
+        "Set to false to disable the fortune multiplier on the Pickaxe of the Scorching Core when it is enchanted with fortune.");
+    scorchingCoreMaxAMP = config
+        .getInt("scorchingCoreMaxAMP", category, scorchingCoreMaxAMP, 0, Integer.MAX_VALUE,
+            "Maximum AMP that the Pickaxe of the Scorching Core can store.");
+    windmakersBladeMaxAMP = config
+        .getInt("windmakersBladeMaxAMP", category, windmakersBladeMaxAMP, 0, Integer.MAX_VALUE,
+            "Maximum AMP that the Windmaker's Blade can store.");
+    windmakersBladeDashCost = config
+        .getInt("windmakersBladeDashCost", category, windmakersBladeDashCost, 0,
+            windmakersBladeMaxAMP, "The AMP cost per dash.");
+    windmakersBladeDashCooldown = config
+        .getInt("windmakersBladeDashCooldown", category, windmakersBladeDashCooldown, 0,
+            Integer.MAX_VALUE, "The time, in ticks, for the cooldown of the Blade's dash ability.");
+    waterWalkerMaxAMP = config
+        .getInt("waterWalkerMaxAMP", category, waterWalkerMaxAMP, 0, Integer.MAX_VALUE,
+            "Maximum AMP that the Belt of the Water Walker can store.");
+    smoulderingCloakMaxAMP = config
+        .getInt("smoulderingCloakMaxAMP", category, smoulderingCloakMaxAMP, 0, Integer.MAX_VALUE,
+            "Maximum AMP that the Smouldering Cloak can store.");
+    smoulderingCloakCost = config
+        .getInt("smoulderingCloakCost", category, smoulderingCloakCost, 0, smoulderingCloakMaxAMP,
+            "The AMP cost per operation.");
+    snowflakeVeilMaxAMP = config
+        .getInt("snowflakeVeilMaxAMP", category, snowflakeVeilMaxAMP, 0, Integer.MAX_VALUE,
+            "Maximum AMP that the Snowflake Veil can store.");
+    snowflakeVeilCost = config
+        .getInt("snowflakeVeilCost", category, snowflakeVeilCost, 0, snowflakeVeilMaxAMP,
+            "The AMP cost per operation.");
+
     category = "Blocks";
     config.addCustomCategoryComment(category, "Allows for the tweaking of non-AMP-related blocks.");
-    runicTransformation = config.getBoolean("runicTransformation", category, runicTransformation, "Set to false to disable the transmutation (Wood > Obsidian, Diamond > Gold > Iron) recipes.");
+    runicTransformation = config.getBoolean("runicTransformation", category, runicTransformation,
+        "Set to false to disable the transmutation (Wood > Obsidian, Diamond > Gold > Iron) recipes.");
 
     category = "Items";
     config.addCustomCategoryComment(category, "Allows for the tweaking of non-AMP-related items.");
-    pestleDurability = config.getInt("pestleDurability", category, pestleDurability, 0, Integer.MAX_VALUE, "The durability of the Pestle.");
+    pestleDurability = config
+        .getInt("pestleDurability", category, pestleDurability, 0, Integer.MAX_VALUE,
+            "The durability of the Pestle.");
 
-    if (config.hasChanged())
+    if (config.hasChanged()) {
       config.save();
+    }
   }
 
 }
