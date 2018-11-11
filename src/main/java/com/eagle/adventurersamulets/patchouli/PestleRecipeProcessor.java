@@ -43,9 +43,14 @@ public class PestleRecipeProcessor implements IComponentProcessor {
                 }
                 return ItemStackUtil.serializeStack(Objects.requireNonNull(input));
             case "output":
-                return ItemStackUtil.serializeStack(recipe.getOutput());
+                ItemStack output = recipe.getOutput();
+                output.setCount(recipe.getOutput().getCount());
+                return ItemStackUtil.serializeStack(output);
             case "name":
-                return recipe.getOutput().getDisplayName();
+                String name = recipe.getOutput().getDisplayName();
+                if (recipe.getOutput().getCount() > 1)
+                    name = name + " (x" + recipe.getOutput().getCount() + ")";
+                return name;
             case "text":
                 return text;
         }
