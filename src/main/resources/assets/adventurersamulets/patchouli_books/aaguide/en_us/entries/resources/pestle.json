@@ -18,6 +18,51 @@
       "type": "pestle",
       "recipe": "ash",
       "text": "The pestle is capable of grinding charcoal into ash which may be useful in the creation of future materials."
+    },
+    {
+      "type": "pestle",
+      "recipe": "oceanicdust",
+      "text": "By grinding down these crystals that I collected from the depths of the abyss, I have created a powder that appears to be highly reactive to aquatic environments."
+    },
+    {
+      "type": "pestle",
+      "recipe": "featherdust",
+      "text": "Whilst this may seem brutish, the feathers from these flightless birds could be useful later on."
+    },
+    {
+      "type": "pestle",
+      "recipe": "sugar",
+      "text": "Sweet! This device allows me to extract sugar from cane at a more efficient rate!"
+    },
+    {
+      "type": "pestle",
+      "recipe": "melonseeds",
+      "text": "No more manual seed picking. The pestle allows me to extract seeds from each slice in plentiful amounts!"
+    },
+    {
+      "type": "pestle",
+      "recipe": "pumpkinseeds",
+      "text": "These pumpkins may be tough, but they're nothing for my pestle! A quick grind here and a quick grind there and alas we have ourselves a whole bag o' seeds!"
+    },
+    {
+      "type": "pestle",
+      "recipe": "bonemeal",
+      "text": "Fertiliser can be tough to obtain so it's a good job that my pestle can extract it in mass."
+    },
+    {
+      "type": "pestle",
+      "recipe": "gunpowder",
+      "text": "Finally some payback for these little blighters! Should I decapitate another, I will be able to grind their head down into dust."
+    },
+    {
+      "type": "pestle",
+      "recipe": "bone",
+      "text": "I've got a bone to pick with you, scoundrel! Ha."
+    },
+    {
+      "type": "pestle",
+      "recipe": "flesh",
+      "text": "I almost feel bad for this. They're already dead though? Right?"
     }
   ]
 }
