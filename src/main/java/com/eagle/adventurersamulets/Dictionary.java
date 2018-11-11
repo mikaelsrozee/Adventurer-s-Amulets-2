@@ -29,6 +29,7 @@ public class Dictionary {
     public static final String SMOULDERINGCLOAK = "smoulderingcloak";
     public static final String SNOWFLAKEVEIL = "snowflakeveil";
     public static final String ANTIGRAVITYRING = "antigravring";
+    public static final String AMBROSIA = "ambrosia";
   }
 
   public static class Block {

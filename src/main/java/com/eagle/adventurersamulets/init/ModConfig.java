@@ -29,6 +29,7 @@ public final class ModConfig {
   public static int snowflakeVeilCost = 5;
   public static int antiGravRingMaxAMP = 1000;
   public static int antiGravRingCost = 5;
+  public static int ambrosiaMaxAMP = 500;
 
   public static boolean runicTransformation = true;
 
@@ -99,6 +100,9 @@ public final class ModConfig {
     antiGravRingCost = config
         .getInt("antiGravRingCost", category, antiGravRingCost, 0, antiGravRingMaxAMP,
             "The AMP cost per operation.");
+    ambrosiaMaxAMP = config
+            .getInt("ambrosiaMaxAMP", category, ambrosiaMaxAMP, 0, Integer.MAX_VALUE,
+                    "Maximum AMP that Ambrosia can store.");
 
     category = "Blocks";
     config.addCustomCategoryComment(category, "Allows for the tweaking of non-AMP-related blocks.");

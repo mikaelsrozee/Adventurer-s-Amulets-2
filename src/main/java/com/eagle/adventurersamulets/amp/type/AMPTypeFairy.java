@@ -20,7 +20,7 @@ public class AMPTypeFairy implements IAMPType {
 
   @Override
   public boolean isChargeConditionCorrect(EntityPlayer player) {
-    return player.experience > 1;
+    return player.experienceLevel > 0 || player.experience > 0;
   }
 
 }

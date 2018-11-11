@@ -3,16 +3,8 @@ package com.eagle.adventurersamulets.init;
 import com.eagle.adventurersamulets.Dictionary;
 import com.eagle.adventurersamulets.Dictionary.Core;
 import com.eagle.adventurersamulets.blocks.BlockMod;
-import com.eagle.adventurersamulets.items.ItemAntiGravRing;
-import com.eagle.adventurersamulets.items.ItemBlockMod;
-import com.eagle.adventurersamulets.items.ItemMod;
-import com.eagle.adventurersamulets.items.ItemPestle;
-import com.eagle.adventurersamulets.items.ItemSearing;
-import com.eagle.adventurersamulets.items.ItemSmeltingPickaxe;
-import com.eagle.adventurersamulets.items.ItemSmoulderingCloak;
-import com.eagle.adventurersamulets.items.ItemSnowflakeVeil;
-import com.eagle.adventurersamulets.items.ItemWaterWalkBelt;
-import com.eagle.adventurersamulets.items.ItemWindmakersBlade;
+import com.eagle.adventurersamulets.items.*;
+
 import java.util.LinkedList;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -47,6 +39,7 @@ public class ModItems {
   public static ItemSmoulderingCloak SMOULDERINGCLOAK = new ItemSmoulderingCloak();
   public static ItemSnowflakeVeil SNOWFLAKEVEIL = new ItemSnowflakeVeil();
   public static ItemAntiGravRing ANTIGRAVRING = new ItemAntiGravRing();
+  public static ItemAmbrosia AMBROSIA = new ItemAmbrosia();
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {
