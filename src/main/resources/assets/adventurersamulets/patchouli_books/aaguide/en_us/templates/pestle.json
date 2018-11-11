@@ -29,6 +29,11 @@
       "height": 37,
       "texture_width": 128,
       "texture_height": 128
+    },
+    {
+      "type": "text",
+      "text": "#text",
+      "x": 0, "y": 40
     }
   ]
 }

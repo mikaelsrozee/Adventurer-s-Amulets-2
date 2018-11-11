@@ -16,12 +16,15 @@ import java.util.Objects;
 public class PestleRecipeProcessor implements IComponentProcessor {
 
     private RecipePestle recipe;
+    private String text;
 
     @Override
     public void setup(IVariableProvider<String> variables) {
         String recipeId = variables.get("recipe");
+        String text = variables.get("text");
 
         recipe = AdvAmAPI.getPestleRecipeFromId(recipeId);
+        this.text = text;
     }
 
     @Override
@@ -43,6 +46,8 @@ public class PestleRecipeProcessor implements IComponentProcessor {
                 return ItemStackUtil.serializeStack(recipe.getOutput());
             case "name":
                 return recipe.getOutput().getDisplayName();
+            case "text":
+                return text;
         }
 
         return null;

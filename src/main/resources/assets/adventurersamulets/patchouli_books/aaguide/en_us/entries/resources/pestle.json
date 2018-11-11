@@ -16,7 +16,8 @@
     },
     {
       "type": "pestle",
-      "recipe": "ash"
+      "recipe": "ash",
+      "text": "The pestle is capable of grinding charcoal into ash which may be useful in the creation of future materials."
     }
   ]
 }
