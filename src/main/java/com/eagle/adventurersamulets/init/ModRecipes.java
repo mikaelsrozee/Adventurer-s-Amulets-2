@@ -16,19 +16,19 @@ public class ModRecipes {
   }
 
   private static void initPestleRecipes() {
-    AdvAmAPI.registerPestleRecipe(new ItemStack(Items.SUGAR, 2), Items.REEDS);
+    AdvAmAPI.registerPestleRecipe("sugar", new ItemStack(Items.SUGAR, 2), Items.REEDS);
     AdvAmAPI
-        .registerPestleRecipe(new ItemStack(Items.GUNPOWDER, 6), new ItemStack(Items.SKULL, 1, 4));
-    AdvAmAPI.registerPestleRecipe(new ItemStack(Items.BONE, 6), new ItemStack(Items.SKULL, 1, 0));
-    AdvAmAPI.registerPestleRecipe(new ItemStack(Items.ROTTEN_FLESH, 6),
+        .registerPestleRecipe("gunpowder", new ItemStack(Items.GUNPOWDER, 6), new ItemStack(Items.SKULL, 1, 4));
+    AdvAmAPI.registerPestleRecipe("bone", new ItemStack(Items.BONE, 6), new ItemStack(Items.SKULL, 1, 0));
+    AdvAmAPI.registerPestleRecipe("flesh", new ItemStack(Items.ROTTEN_FLESH, 6),
         new ItemStack(Items.SKULL, 1, 2));
-    AdvAmAPI.registerPestleRecipe(new ItemStack(Items.DYE, 4, 15), Items.BONE);
-    AdvAmAPI.registerPestleRecipe(new ItemStack(Items.PUMPKIN_SEEDS, 6), Blocks.PUMPKIN);
-    AdvAmAPI.registerPestleRecipe(new ItemStack(Items.MELON_SEEDS, 3), Items.MELON);
-    AdvAmAPI.registerPestleRecipe(new ItemStack(ModItems.ASH, 1), new ItemStack(Items.COAL, 1, 1));
-    AdvAmAPI.registerPestleRecipe(new ItemStack(ModItems.FEATHERDUST, 1), Items.FEATHER);
+    AdvAmAPI.registerPestleRecipe("bonemeal", new ItemStack(Items.DYE, 4, 15), Items.BONE);
+    AdvAmAPI.registerPestleRecipe("pumpkinseeds", new ItemStack(Items.PUMPKIN_SEEDS, 6), Blocks.PUMPKIN);
+    AdvAmAPI.registerPestleRecipe("melonseeds", new ItemStack(Items.MELON_SEEDS, 3), Items.MELON);
+    AdvAmAPI.registerPestleRecipe("ash", new ItemStack(ModItems.ASH, 1), new ItemStack(Items.COAL, 1, 1));
+    AdvAmAPI.registerPestleRecipe("featherdust", new ItemStack(ModItems.FEATHERDUST, 1), Items.FEATHER);
     AdvAmAPI
-        .registerPestleRecipe(new ItemStack(ModItems.OCEANICDUST, 1), Items.PRISMARINE_CRYSTALS);
+        .registerPestleRecipe("oceanicdust", new ItemStack(ModItems.OCEANICDUST, 1), Items.PRISMARINE_CRYSTALS);
   }
 
   private static void initCraftingRuneRecipes() {

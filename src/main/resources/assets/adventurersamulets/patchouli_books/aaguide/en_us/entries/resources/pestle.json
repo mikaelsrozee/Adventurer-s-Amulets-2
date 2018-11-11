@@ -13,6 +13,10 @@
       "type": "crafting",
       "recipe": "adventurersamulets:pestle",
       "text": "I can use the pestle by simply throwing the item I want to grind onto the floor and then interacting with it using the pestle."
+    },
+    {
+      "type": "pestle",
+      "recipe": "ash"
     }
   ]
 }

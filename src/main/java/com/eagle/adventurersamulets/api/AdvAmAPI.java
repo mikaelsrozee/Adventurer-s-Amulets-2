@@ -6,12 +6,15 @@ import com.eagle.adventurersamulets.api.recipe.RecipePestle;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemStack;
 
 public final class AdvAmAPI {
 
   public static final List<RecipePestle> pestleRecipes = new ArrayList<>();
+  public static final HashMap<String, RecipePestle> pestleRecipeMap = new HashMap<>();
   public static final List<RecipeCraftingRune> craftingRuneRecipes = new ArrayList<>();
 
   private static HashMap<String, IAMPType> ampTypes = new HashMap<>();
@@ -24,10 +27,21 @@ public final class AdvAmAPI {
    * recipe
    * @return The recipe created
    */
-  public static RecipePestle registerPestleRecipe(ItemStack output, Object input) {
+  public static RecipePestle registerPestleRecipe(String id, ItemStack output, Object input) {
     RecipePestle recipe = new RecipePestle(output, input);
     pestleRecipes.add(recipe);
+    pestleRecipeMap.put(id, recipe);
     return recipe;
+  }
+
+  /**
+   * Returns the pestle recipe for specified id.
+   *
+   * @param id The id of the recipe to find.
+   * @return The recipe found.
+   */
+  public static RecipePestle getPestleRecipeFromId(String id) {
+    return pestleRecipeMap.get(id);
   }
 
   /**
