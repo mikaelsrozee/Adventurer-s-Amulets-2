@@ -1,0 +1,12 @@
+{
+  "name": "The Infernal Inferno",
+  "icon": "minecraft:fire_charge",
+  "category": "amp",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Only those who dare venture to the depths of hell will be able to harness the demonic powers that lie within this form of energy. Setting yourself alight appears to have a similar effect."
+    }
+  ]
+}

@@ -3,7 +3,6 @@
   "icon": "adventurersamulets:pestle",
   "category": "resources",
   "priority": true,
-  "read_by_default": true,
   "pages": [
     {
       "type": "text",

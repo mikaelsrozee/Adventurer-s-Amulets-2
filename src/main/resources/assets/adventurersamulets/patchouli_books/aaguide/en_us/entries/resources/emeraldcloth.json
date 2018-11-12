@@ -1,0 +1,20 @@
+{
+  "name": "Emerald Cloth",
+  "icon": "adventurersamulets:emeraldcloth",
+  "category": "resources",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l:resources/craftingrune)Crafting Rune$() appears to be able to infuse wool with emeralds. This new cloth radiates light and the twine from it may be useful in future creations."
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "emeraldcloth"
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:emeraldstring",
+      "recipe2": "adventurersamulets:emeraldcloth"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Your biggest fan",
+  "icon": "minecraft:feather",
+  "category": "amp",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "There is no greater feeling than souring above the clouds. The buzz that you feel, that power, that energy... wait! I could harness this power to create tools capable of harnessing the wind. Genius!"
+    }
+  ]
+}

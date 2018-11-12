@@ -1,0 +1,12 @@
+{
+  "name": "I see trees of green",
+  "icon": "minecraft:sapling",
+  "category": "amp",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Since they came into existence, plants have been able to harness the energy of the sun to grow and live. I feel as if, with a little research, I too could use this energy."
+    }
+  ]
+}

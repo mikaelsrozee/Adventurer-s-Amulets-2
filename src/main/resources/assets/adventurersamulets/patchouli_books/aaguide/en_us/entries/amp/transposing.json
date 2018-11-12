@@ -1,0 +1,12 @@
+{
+  "name": "Wanna be your endgame",
+  "icon": "minecraft:ender_pearl",
+  "category": "amp",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "The End realm seems to be filled with a strange aura. Simply being in the End dimension seems to be enough to feel the energy coursing through me."
+    }
+  ]
+}

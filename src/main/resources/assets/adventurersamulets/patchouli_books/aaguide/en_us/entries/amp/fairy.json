@@ -1,0 +1,12 @@
+{
+  "name": "Leave a little sparkle",
+  "icon": "minecraft:experience_bottle",
+  "category": "amp",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "I awoke in the middle of the night to a flash of blinding light. A torch? No, it was floating. A firefly? No, it was humanoid. A fairy? Surely not, they are creatures of myth, of legend. Ever since that moment, my own body appeared to possess the ability to harness the same energy I felt from those creatures through nothing but my own $(o)experience$()."
+    }
+  ]
+}

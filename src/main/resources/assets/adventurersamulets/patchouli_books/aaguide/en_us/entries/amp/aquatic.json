@@ -1,0 +1,12 @@
+{
+  "name": "Down where it's wetter",
+  "icon": "minecraft:water_bucket",
+  "category": "amp",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "The abyss hides powers unheard of by the everyday man. This type of energy is mainly drawn from submersion in water though it can also be charged whilst it is raining."
+    }
+  ]
+}

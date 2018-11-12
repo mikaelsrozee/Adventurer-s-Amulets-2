@@ -1,0 +1,12 @@
+{
+  "name": "Let It Go",
+  "icon": "minecraft:ice",
+  "category": "amp",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Born of cold and winter air and mountain rain combining, this icy force both foul and fair has a frozen heart worth mining so cut through the heart, cold and clear. Any area where it is capable of snowfall should also be enough to charge such a device."
+    }
+  ]
+}

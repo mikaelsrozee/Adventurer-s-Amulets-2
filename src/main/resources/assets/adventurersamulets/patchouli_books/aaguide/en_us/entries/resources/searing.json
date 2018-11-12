@@ -1,0 +1,16 @@
+{
+  "name": "Searing Minerals",
+  "icon": "adventurersamulets:searingiron:3",
+  "category": "resources",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Bathing certain minerals in the depths of a fiery hell appears to enable their ability to store $(l:amp/infernal)Infernal$() powers.$(br2) Once it has enough power stored it may become more useful."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:searinggemstone0",
+      "recipe2": "adventurersamulets:searingiron0"
+    }
+  ]
+}

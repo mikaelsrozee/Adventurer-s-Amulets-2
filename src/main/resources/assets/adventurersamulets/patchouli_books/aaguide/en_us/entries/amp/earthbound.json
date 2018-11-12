@@ -1,0 +1,12 @@
+{
+  "name": "Rock and Roll",
+  "icon": "minecraft:stone",
+  "category": "amp",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Even the Earth itself holds a form of energy. From my research, it seems that it can be harnessed by venturing to the very depths of a cavern surrounded by the beauty that is geology."
+    }
+  ]
+}
