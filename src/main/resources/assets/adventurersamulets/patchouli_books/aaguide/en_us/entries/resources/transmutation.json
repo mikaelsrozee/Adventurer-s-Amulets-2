@@ -1,0 +1,71 @@
+{
+  "name": "Transmutation",
+  "icon": "minecraft:diamond",
+  "category": "resources",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Humankind cannot gain anything without first giving something in return. To obtain, something of equal value must be lost.$(br2) It appears that the $(l:resources/craftingrune)Crafting Rune$() is capable of such a transmutation."
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "8woodto4obsidian"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "4woodto2obsidian"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "2woodto1obsidian"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "4dirtto1gravel"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "8dirtto2gravel"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "1sandstoneto4sand"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "2sandstoneto8sand"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "4planksto1log"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "8planksto2log"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "8ironto1gold"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "1goldto8iron"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "4goldto1diamond"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "8goldto2diamond"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "1diamondto4gold"
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "2diamondto8gold"
+    }
+  ]
+}

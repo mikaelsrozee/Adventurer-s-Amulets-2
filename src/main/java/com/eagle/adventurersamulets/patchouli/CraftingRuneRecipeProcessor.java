@@ -16,15 +16,12 @@ import java.util.Objects;
 public class CraftingRuneRecipeProcessor implements IComponentProcessor {
 
     private RecipeCraftingRune recipe;
-    private String text;
 
     @Override
     public void setup(IVariableProvider<String> variables) {
         String recipeId = variables.get("recipe");
-        String text = variables.get("text");
 
         recipe = AdvAmAPI.getCraftingRuneRecipeFromId(recipeId);
-        this.text = text;
     }
 
     @Override
@@ -36,7 +33,7 @@ public class CraftingRuneRecipeProcessor implements IComponentProcessor {
             if (inputArray[id] instanceof Block) {
                 input = new ItemStack((Block) inputArray[id]);
             } else if (inputArray[id] instanceof String) {
-                input = OreDictionary.getOres((String) inputArray[id]).get(0);
+                input = new ItemStack(OreDictionary.getOres((String) inputArray[id]).get(0).getItem());
             }
             return ItemStackUtil.serializeStack(Objects.requireNonNull(input));
         } else if (key.startsWith("output")) {

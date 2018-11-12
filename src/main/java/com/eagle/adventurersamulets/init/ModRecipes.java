@@ -46,7 +46,7 @@ public class ModRecipes {
       AdvAmAPI.registerCraftingRuneRecipeWithQuantity("8goldto2diamond", Blocks.DIAMOND_BLOCK.getDefaultState(), 2, "blockGold", "blockGold", "blockGold", "blockGold", "blockGold", "blockGold", "blockGold", "blockGold");
       AdvAmAPI.registerCraftingRuneRecipe("1goldto8iron", Blocks.IRON_BLOCK.getDefaultState(), "blockGold", Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR);
       AdvAmAPI.registerCraftingRuneRecipeWithQuantity("1diamondto4gold", Blocks.GOLD_BLOCK.getDefaultState(), 4, "blockDiamond", Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR);
-      AdvAmAPI.registerCraftingRuneRecipe("2diamondto8hold", Blocks.GOLD_BLOCK.getDefaultState(), "blockDiamond", "blockDiamond", Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR);
+      AdvAmAPI.registerCraftingRuneRecipe("2diamondto8gold", Blocks.GOLD_BLOCK.getDefaultState(), "blockDiamond", "blockDiamond", Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR, Blocks.AIR);
     }
     AdvAmAPI.registerCraftingRuneRecipeWithQuantity("emeraldcloth", ModBlocks.EMERALDCLOTH.getDefaultState(), 4, Blocks.WOOL, Blocks.WOOL, Blocks.WOOL, Blocks.WOOL, Blocks.WOOL, Blocks.WOOL, Blocks.WOOL, "blockEmerald");
   }
