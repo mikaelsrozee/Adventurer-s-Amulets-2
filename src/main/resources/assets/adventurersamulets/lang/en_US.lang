@@ -21,7 +21,7 @@ tile.emeraldcloth.name=Emerald Cloth
 
 adventurersamulets.jei.pestle=Pestle Recipes
 adventurersamulets.jei.craftingrune=Runic Crafting
-jei.gui.craftingrune.tierRequired=Tier Required:
+jei.gui.craftingrune.tierRequired=Tier:
 jei.gui.craftingrune.north=North
 jei.gui.craftingrune.desc=Right click a Slate with a piece of Glowstone Dust to create. This rune uses the Earth's magnetic forces in order to craft, and so you must pay close attention that your recipe is facing north.
 
