@@ -1,0 +1,28 @@
+{
+  "name": "Perfecting the Craft",
+  "icon": "adventurersamulets:craftingrune",
+  "category": "resources",
+  "priority": true,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "After some experimentation, I have discovered that I can use ash to change the properties of stone. Furthermore, this new type of stone appears to be highly reactive to Glowstone Dust."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:slate",
+      "text": "When Glowstone Dust interacts with the slate, it transforms into what appears to be a rune."
+    },
+    {
+      "type": "spotlight",
+      "item": "adventurersamulets:craftingrune",
+      "link_recipe": true,
+      "text": "The rune is highly sensitive to magnetism. As such, all recipes must be constructed as if you are facing north. To use the rune, simply place it in the world and then surround it with the materials required and interact with the rune."
+    },
+    {
+      "type": "craftingrune",
+      "recipe": "2gravelto8dirt"
+    }
+  ]
+}
