@@ -51,7 +51,6 @@ public class ItemSmoulderingCloak extends ItemMod implements IBauble, IAMPItem {
     }
 
     if (entity.isBurning() && getCurrentAMP(itemStack) >= ModConfig.smoulderingCloakCost) {
-
       boolean hasFireResist = false;
       for (PotionEffect effect : entity.getActivePotionEffects()) {
         if (effect.getPotion().equals(MobEffects.FIRE_RESISTANCE)) {

@@ -1,0 +1,15 @@
+{
+  "name": "Belt of the Water Walker",
+  "icon": "adventurersamulets:beltofthewaterwalker",
+  "category": "amulets",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Long ago, there was said to be a man capable of walking on water. This belt grants the wearer the same ability granted that the belt has been infused with the $(l:amp/aquatic)powers that exist at the deepest depths of the ocean$()."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:beltofthewaterwalker"
+    }
+  ]
+}

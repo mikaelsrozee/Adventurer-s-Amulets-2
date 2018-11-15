@@ -1,0 +1,15 @@
+{
+  "name": "Windmaker's Blade",
+  "icon": "adventurersamulets:windmakersblade",
+  "category": "artifacts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Some stories tell of assassins and ninjas that were able to fly through the night skies with grace and speed, taking out targets in one swift blow. By $(l:amp/windmakers)becoming one with the wind$(),  I have forged a blade that causes the holder to move faster as well as being able to leap great distances."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:windmakersblade"
+    }
+  ]
+}

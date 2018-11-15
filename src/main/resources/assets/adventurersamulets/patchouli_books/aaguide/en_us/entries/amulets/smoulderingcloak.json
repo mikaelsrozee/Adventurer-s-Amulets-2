@@ -1,0 +1,15 @@
+{
+  "name": "Smouldering Cloak",
+  "icon": "adventurersamulets:smoulderingcloak",
+  "category": "amulets",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Mythology tells us of a Phoenix rising from the ashes, returning from the flames, clothed in nothing but her strength. $(br2)The one who chooses to wear this cloak will be imbued with those $(l:amp/infernal)very same flames$(), protecting the user from any fire damage and causing any foe that attack the wearer to be set ablaze."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:smoulderingcloak"
+    }
+  ]
+}

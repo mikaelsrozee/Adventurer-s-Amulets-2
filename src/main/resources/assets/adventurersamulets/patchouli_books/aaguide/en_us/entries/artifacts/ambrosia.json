@@ -1,0 +1,16 @@
+{
+  "name": "Ambrosia",
+  "icon": "adventurersamulets:ambrosia:3",
+  "category": "artifacts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "According to mythology, there was once a drink capable of bestowing whoever drunk it with immortality. Such a drink has not been found in modern times but I believe I have created a substance that can serve a similar purpose."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:ambrosia",
+      "text": "The bottle is not filled manually. Instead, the bottle fills itself with the $(l:amp/fairy)power of the fairies$()."
+    }
+  ]
+}

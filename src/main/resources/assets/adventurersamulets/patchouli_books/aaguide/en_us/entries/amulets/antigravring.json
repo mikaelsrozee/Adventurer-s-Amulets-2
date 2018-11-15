@@ -1,0 +1,15 @@
+{
+  "name": "Anti-Gravity Ring",
+  "icon": "adventurersamulets:antigravring",
+  "category": "amulets",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The End realm appears to be an inversion of the Overworld. I have discovered a way to imbue these $(l:amp/transposing)inverted powers$() into a ring. This ring seems to allow the wearer's personal gravity to be inverted whenever they are sneaking."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:antigravring"
+    }
+  ]
+}

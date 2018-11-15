@@ -1,0 +1,16 @@
+{
+  "name": "Scorching Pickaxe",
+  "icon": "adventurersamulets:pickaxeofthescorchingcore",
+  "category": "artifacts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(resources/searing)Infernal minerals$() seem to have interesting properties when used to create a pickaxe. Any block mined with the tool will be automatically smelted. Enchantments can be placed on the tool as with any other."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:pickaxeofthescorchingcore",
+      "title": "Scorching Pickaxe"
+    }
+  ]
+}

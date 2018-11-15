@@ -1,0 +1,15 @@
+{
+  "name": "Snowflake Veil",
+  "icon": "adventurersamulets:snowflakeveil",
+  "category": "amulets",
+  "pages": [
+    {
+      "type": "text",
+      "text": "I have discovered a way to imbue cloth with the $(l:amp/frostbitten)strength of the harshest winters$(). In doing so, I have created a robe that will defend the one who chooses to wear it by freezing those who dare to attack it."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:snowflakeveil"
+    }
+  ]
+}
