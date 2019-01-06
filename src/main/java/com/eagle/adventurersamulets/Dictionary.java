@@ -30,6 +30,7 @@ public class Dictionary {
     public static final String SNOWFLAKEVEIL = "snowflakeveil";
     public static final String ANTIGRAVITYRING = "antigravring";
     public static final String AMBROSIA = "ambrosia";
+    public static final String TRANSPOSINGINGOT = "transposingingot";
   }
 
   public static class Block {

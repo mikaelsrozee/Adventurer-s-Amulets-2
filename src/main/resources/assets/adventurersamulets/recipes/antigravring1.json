@@ -1,0 +1,22 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "ICI",
+    "CEC",
+    "ICI"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:end_crystal"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "I": {
+      "item": "adventurersamulets:transposingingot"
+    }
+  },
+  "result": {
+    "item": "adventurersamulets:antigravring"
+  }
+}

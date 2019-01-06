@@ -40,6 +40,7 @@ public class ModItems {
   public static ItemSnowflakeVeil SNOWFLAKEVEIL = new ItemSnowflakeVeil();
   public static ItemAntiGravRing ANTIGRAVRING = new ItemAntiGravRing();
   public static ItemAmbrosia AMBROSIA = new ItemAmbrosia();
+  public static ItemMod TRANSPOSINGINGOT = new ItemMod(Dictionary.Item.TRANSPOSINGINGOT);
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {
