@@ -1,0 +1,24 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "treeSapling"
+    },
+    {
+      "item": "minecraft:fire_charge"
+    }
+  ],
+  "result": {
+    "item": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "adventurersamulets:aaguide"
+    }
+  }
+}
