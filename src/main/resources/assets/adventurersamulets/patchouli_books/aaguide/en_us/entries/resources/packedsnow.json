@@ -1,0 +1,21 @@
+{
+  "name": "Painful Snowballs",
+  "icon": "adventurersamulets:packedsnow",
+  "category": "resources",
+  "priority": false,
+  "pages": [
+    {
+      "type": "text",
+      "text": "I almost feel brutish creating these. All the warnings from my parents to not throw snowballs just in case they contained rocks or anything sharp and I've purposefully created snowballs capable of acting as projectile weapons... <feature not yet implemented>"
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:packedsnow"
+    },
+    {
+      "type": "pestle",
+      "recipe": "frostdust",
+      "text": "Grinding down the snowballs using a pestle creates a powder that is frozen to the touch."
+    }
+  ]
+}

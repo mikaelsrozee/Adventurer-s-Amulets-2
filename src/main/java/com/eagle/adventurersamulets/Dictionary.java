@@ -29,6 +29,9 @@ public class Dictionary {
     public static final String ANTIGRAVITYRING = "antigravring";
     public static final String AMBROSIA = "ambrosia";
     public static final String TRANSPOSINGINGOT = "transposingingot";
+    public static final String CLOAK = "cloak";
+    public static final String PACKEDSNOW = "packedsnow";
+    public static final String FROSTDUST = "frostdust";
   }
 
   public static class Block {
@@ -38,7 +41,6 @@ public class Dictionary {
   }
 
   public static class AMP {
-
     public static final String AQUATIC_ID = "aquatic";
     public static final String EARTHBOUND_ID = "earthbound";
     public static final String FAIRY_ID = "fairy";

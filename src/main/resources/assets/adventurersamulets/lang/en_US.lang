@@ -15,6 +15,9 @@ item.snowflakeveil.name=Snowflake Veil
 item.antigravring.name=Anti-Gravity Ring
 item.ambrosia.name=Ambrosia
 item.transposingingot.name=Transposing Ingot
+item.cloak.name=Cloak
+item.packedsnow.name=Packed Snow
+item.frostdust.name=Frost Dust
 
 tile.slate.name=Slate
 tile.craftingrune.name=Crafting Rune

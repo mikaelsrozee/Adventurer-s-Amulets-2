@@ -1,0 +1,16 @@
+{
+  "name": "It's all good in the hood",
+  "icon": "adventurersamulets:cloak",
+  "category": "resources",
+  "priority": false,
+  "pages": [
+    {
+      "type": "text",
+      "text": "By itself, this hooded cloak is nothing more than a mundane clothing item. I wonder if there is a way to imbue the cloth with some form of magic energy."
+    },
+    {
+      "type": "crafting",
+      "recipe": "adventurersamulets:cloak"
+    }
+  ]
+}

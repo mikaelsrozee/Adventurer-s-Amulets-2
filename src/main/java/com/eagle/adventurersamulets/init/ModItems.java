@@ -41,6 +41,9 @@ public class ModItems {
   public static ItemAntiGravRing ANTIGRAVRING = new ItemAntiGravRing();
   public static ItemAmbrosia AMBROSIA = new ItemAmbrosia();
   public static ItemMod TRANSPOSINGINGOT = new ItemMod(Dictionary.Item.TRANSPOSINGINGOT);
+  public static ItemMod CLOAK = new ItemMod(Dictionary.Item.CLOAK);
+  public static ItemMod PACKEDSNOW = new ItemMod(Dictionary.Item.PACKEDSNOW); // TODO: Make throwable
+  public static ItemMod FROSTDUST = new ItemMod(Dictionary.Item.FROSTDUST);
 
   @SubscribeEvent
   public static void registerItems(RegistryEvent.Register<Item> event) {

@@ -1,0 +1,23 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "DGD",
+    "GCG",
+    "DGD"
+  ],
+  "key": {
+    "C": {
+      "item": "adventurersamulets:cloak"
+    },
+    "G": {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    "D": {
+      "item": "adventurersamulets:frostdust"
+    }
+  },
+  "result": {
+    "item": "adventurersamulets:snowflakeveil"
+  }
+}
