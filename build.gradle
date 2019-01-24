@@ -9,9 +9,9 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "1.12.2-2.0.0-ALPHA1"
-group = "com.eagle.adventurersamulets2"
-archivesBaseName = "AdventurersAmulets2"
+version = "1.12.2-2.0.0-BETA1"
+group = "com.eagle.adventurersamulets"
+archivesBaseName = "AdventurersAmulets"
 
 sourceCompatibility = targetCompatibility = '1.8'
 compileJava {
