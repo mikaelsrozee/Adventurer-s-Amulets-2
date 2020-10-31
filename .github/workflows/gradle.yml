@@ -25,7 +25,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Discord Webhook Action
-    - uses: tsickert/discord-webhook@v1.0.1
+      uses: tsickert/discord-webhook@v1.0.1
       with:
         # Webhook URL from discord. See: https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks for details
         webhook-url: https://discordapp.com/api/webhooks/772047956060274689/fN4ihPz5SmB3zTjj4cd61tMJxCasORcVK-jx1G2LHJm-PcMS_unJO77ElRMERrHvtrJX
